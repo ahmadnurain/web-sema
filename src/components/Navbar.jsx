@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -30,9 +31,9 @@ const Navbar = () => {
       <div className="w-full flex flex-wrap items-center justify-between mx-auto py-4 px-8 md:px-12">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
-          <img src="Logo/Logo BEM UPNVJ.png" className="h-16 md:h-12" />
+          <img src="/Logo/Logo BEM UPNVJ.png" className="h-16 md:h-12" />
           <img
-            src="Logo/Logo Parlemen BEM UPNVJ.png"
+            src="/Logo/Logo Parlemen BEM UPNVJ.png"
             className="h-12 md:h-10"
           />
         </a>
@@ -94,7 +95,10 @@ const Navbar = () => {
                 onMouseLeave={() => setDropdownOpen(false)}
               >
                 {/* Trigger */}
-                <div className="relative inline-flex items-center px-3 py-2 hover:text-white hover:bg-red-800 lg:hover:text-black lg:hover:bg-white rounded-md cursor-pointer group">
+                <Link
+                  to="/Departments"
+                  className="relative inline-flex items-center px-3 py-2 hover:text-white hover:bg-red-800 lg:hover:text-black lg:hover:bg-white rounded-md cursor-pointer group"
+                >
                   Struktur Kabinet
                   <FontAwesomeIcon
                     icon={faChevronDown}
@@ -104,17 +108,17 @@ const Navbar = () => {
                     className="absolute bottom-2 left-3 h-0.5 bg-red-800 transition-all duration-500 ease-in-out origin-left transform scale-x-0 group-hover:scale-x-100"
                     style={{ width: "calc(100% - 1.5rem)" }}
                   ></span>
-                </div>
+                </Link>
 
                 {/* Dropdown */}
                 {dropdownOpen && (
                   <div className="absolute left-3 z-20 w-44 bg-white rounded shadow -mt-3 lg:-mt-1">
-                    <a
-                      href="/Department/KOMINFO"
+                    <Link
+                      to="/Department/KOMINFO"
                       className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
                     >
                       KOMINFO
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -134,9 +138,9 @@ const Navbar = () => {
                   className="ml-1 w-3 h-3"
                 />
                 <span
-                    className="absolute bottom-2 left-3 h-0.5 bg-red-800 transition-all duration-500 ease-in-out origin-left transform scale-x-0 group-hover:scale-x-100"
-                    style={{ width: "calc(100% - 1.5rem)" }}
-                  ></span>
+                  className="absolute bottom-2 left-3 h-0.5 bg-red-800 transition-all duration-500 ease-in-out origin-left transform scale-x-0 group-hover:scale-x-100"
+                  style={{ width: "calc(100% - 1.5rem)" }}
+                ></span>
               </div>
 
               {/* Dropdown */}
