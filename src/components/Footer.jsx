@@ -8,13 +8,13 @@ const Footer = () => {
         {/* Logo Section */}
         <aside className="flex justify-center lg:justify-around items-center w-full lg:w-fit h-full space-x-4">
           <a href="https://upnvj.ac.id/" className="w-16 h-16 md:w-16 md:h-16">
-            <img src="Logo/Logo UPNVJ.png" className="w-full" alt="Logo UPNVJ" />
+            <img src="/Logo/Logo UPNVJ.png" className="w-full" alt="Logo UPNVJ" />
           </a>
           <a href="/" className="w-16 h-16">
-            <img src="Logo/Logo BEM UPNVJ.png" className="w-full" alt="Logo BEM UPNVJ" />
+            <img src="/Logo/Logo BEM UPNVJ.png" className="w-full" alt="Logo BEM UPNVJ" />
           </a>
           <a href="/" className="w-16 h-16">
-            <img src="Logo/Logo Parlemen BEM UPNVJ.png" className="w-full" alt="Logo Parlemen" />
+            <img src="/Logo/Logo Parlemen BEM UPNVJ.png" className="w-full" alt="Logo Parlemen" />
           </a>
         </aside>
 
