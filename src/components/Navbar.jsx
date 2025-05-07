@@ -114,10 +114,34 @@ const Navbar = () => {
                 {dropdownOpen && (
                   <div className="absolute left-3 z-20 w-44 bg-white rounded shadow -mt-3 lg:-mt-1">
                     <Link
+                      to="/Department/BPH"
+                      className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
+                    >
+                      BPH
+                    </Link>
+                    <Link
                       to="/Department/KOMINFO"
                       className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
                     >
                       KOMINFO
+                    </Link>
+                    <Link
+                      to="/Department/RISTEK"
+                      className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
+                    >
+                      RISTEK
+                    </Link>
+                    <Link
+                      to="/Department/ADVOKASI"
+                      className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
+                    >
+                      ADVOKASI
+                    </Link>
+                    <Link
+                      to="/Department/PPSDM"
+                      className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
+                    >
+                      PPSDM
                     </Link>
                   </div>
                 )}

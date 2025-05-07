@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const DepartemenKominfo = () => {
+const DepartemenRistek = () => {
   return (
     <div>
       {/* Header Section */}
@@ -29,7 +29,7 @@ const DepartemenKominfo = () => {
                   data-aos="fade-down"
                   data-aos-duration="2000"
                 >
-                  Departemen Komunikasi &amp; Informasi
+                  Departemen Riset &amp; Teknologi
                 </p>
                 <hr className="w-screen flex justify-center border-yellow-600 border-b-2" />
               </div>
@@ -52,18 +52,21 @@ const DepartemenKominfo = () => {
                   data-aos="zoom-in"
                   data-aos-duration="2000"
                 >
-                  Departemen Komunikasi &amp; Informasi berperan dalam menyusun
-                  dan menyebarluaskan informasi strategis, merancang indikator
-                  keberhasilan komunikasi dan publikasi, serta memelihara citra
-                  organisasi melalui pengelolaan media, konten kreatif, dan
-                  hubungan dengan pemangku kepentingan.
+                  Departemen Riset & Teknologi berperan dalam mengembangkan
+                  inovasi berbasis penelitian, memajukan kapabilitas teknologi
+                  organisasi, serta menerapkan solusi berbasis data untuk
+                  mendukung pengambilan keputusan strategis. Departemen ini
+                  bertanggung jawab atas eksplorasi tren terkini, pengujian
+                  prototipe, dan peningkatan efisiensi sistem melalui integrasi
+                  tools digital, sambil memastikan keamanan dan keberlanjutan
+                  teknologi yang digunakan.
                 </p>
               </div>
 
               <div className="h-auto flex justify-center mb-5 lg:mb-8">
                 <Link
                   className="bg-red-800 hover:bg-red-900 text-yellow-600 font-bold text-xl md:text-3xl rounded-3xl flex justify-center p-5"
-                  to="/Department/KOMINFO/Proker"
+                  to="/Department/RISTEK/Proker"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -111,8 +114,8 @@ const DepartemenKominfo = () => {
               >
                 <img
                   className="object-cover lg:hidden block z-0"
-                  src="/departments/kominfo/caca.png"
-                  alt="Shalsabila Dwi Aprilia"
+                  src="/departments/ristek/alkindi.png"
+                  alt="alkindi"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
               </div>
@@ -122,7 +125,7 @@ const DepartemenKominfo = () => {
                 data-aos="fade-down"
                 data-aos-duration="2000"
               >
-                Shalsabila Dwi Aprilia
+                Nakula Sukma Alkindi
               </p>
 
               <div
@@ -152,7 +155,7 @@ const DepartemenKominfo = () => {
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                Koordinator Departemen Komunikasi &amp; Informasi
+                Koordinator Departemen Ristek & Teknologi
               </p>
             </div>
 
@@ -164,8 +167,8 @@ const DepartemenKominfo = () => {
             >
               <img
                 className="object-cover -m-20 z-20"
-                src="/departments/kominfo/caca.png"
-                alt="Shalsabila Dwi Aprilia"
+                src="/departments/ristek/alkindi.png"
+                alt="alkindi"
               />
             </div>
 
@@ -193,7 +196,7 @@ const DepartemenKominfo = () => {
                 data-aos="fade-down"
                 data-aos-duration="2000"
               >
-                Anggota Kominfo
+                Anggota Ristek
               </p>
             </div>
 
@@ -213,10 +216,10 @@ const DepartemenKominfo = () => {
               >
                 {/* Member List */}
                 {[
-                  { name: "Temi Mei Sri Utami", instagram: "username" },
-                  { name: "Ahmad Nur`Ain", instagram: "username" },
-                  { name: "Andi Nugraha Saputra", instagram: "username" },
-                  { name: "Sandi Pirdaus", instagram: "username" },
+                  { name: "Nindi Lestari", instagram: "username" },
+                  { name: "Rubby Afkar Gustian", instagram: "username" },
+                  { name: "Titah Syauqi Kusuma", instagram: "username" },
+                  { name: "Vickry Afrizal Herdiawan", instagram: "username" },
                 ].map((member, index) => (
                   <div
                     key={index}
@@ -262,7 +265,7 @@ const DepartemenKominfo = () => {
         >
           <img
             className="z-10"
-            src="/departments/kominfo/allkominfo.png"
+            src="/departments/ristek/allristek.png"
             alt=""
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white z-20"></div>
@@ -272,4 +275,4 @@ const DepartemenKominfo = () => {
   );
 };
 
-export default DepartemenKominfo;
+export default DepartemenRistek;

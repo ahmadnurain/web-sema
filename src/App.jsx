@@ -5,6 +5,8 @@ import MainLayout from "./layouts/MainLayout";
 import Departments from "./pages/Departments";
 import DepartemenKominfo from "./pages/Kominfo";
 import ProgramKerjaKominfo from "./pages/KominfoProker";
+import DepartemenRistek from "./pages/Ristek";
+import ProgramKerjaRistek from "./pages/RistekProker";
 
 function App() {
   return (
@@ -17,6 +19,11 @@ function App() {
           <Route
             path="/Department/KOMINFO/Proker"
             element={<ProgramKerjaKominfo />}
+          />
+          <Route path="/Department/RISTEK" element={<DepartemenRistek />} />
+          <Route
+            path="/Department/RISTEK/Proker"
+            element={<ProgramKerjaRistek />}
           />
         </Routes>
       </MainLayout>
