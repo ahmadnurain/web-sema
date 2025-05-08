@@ -1,30 +1,8 @@
 import React from "react";
+import data from "../utils/kominfo.json";
 
 const ProgramKerjaKominfo = () => {
-  // Program data array
-  const programData = [
-    {
-      id: 1,
-      title: "Lorem",
-      description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi exercitationem itaque dolorum dolore repellat natus at tenetur neque corporis vel!",
-      image: "/Proker/comingsoon.png",
-    },
-    {
-      id: 2,
-      title: "Lorem",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius eligendi quisquam ipsa quos alias doloremque, ex quis reprehenderit quasi.",
-      image: "/Proker/comingsoon.png",
-    },
-    {
-      id: 3,
-      title: "Lorem",
-      description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur, voluptatem quod quibusdam animi quia quam mollitia veritatis! Aspernatur, corporis.",
-      image: "/Proker/comingsoon.png",
-    },
-  ];
+  const Default = data.default[0];
 
   return (
     <div className="pb-0 mb-10">
@@ -52,7 +30,7 @@ const ProgramKerjaKominfo = () => {
                   data-aos="fade-down"
                   data-aos-duration="2000"
                 >
-                  Departemen Komunikasi &amp; Informasi
+                  {Default.title}
                 </p>
                 <hr className="w-screen flex justify-center border-yellow-600 border-b-2" />
               </div>
@@ -70,13 +48,13 @@ const ProgramKerjaKominfo = () => {
               data-aos="zoom-in"
               data-aos-duration="2000"
             >
-              Program Kerja Departemen Komunikasi &amp; Informasi
+              Program Kerja {Default.title}
             </p>
           </div>
 
           {/* Program List - Mapped from array */}
-          {programData.map((program) => (
-            <div key={program.id} className="pb-12">
+          {data.proker.map((Proker) => (
+            <div key={Proker.id} className="pb-12">
               <div
                 className="flex flex-col lg:flex-row justify-center items-center px-3"
                 data-aos="fade-up"
@@ -84,16 +62,16 @@ const ProgramKerjaKominfo = () => {
               >
                 <img
                   className="w-3/4 lg:w-[15%] h-3/4 lg:h-[15%] rounded-3xl"
-                  src={program.image}
-                  alt={`Program ${program.title}`}
+                  src={Proker.image}
+                  alt={`Program ${Proker.title}`}
                 />
                 <div className="w-full pt-5 lg:pt-0 pl-0 lg:pl-10 items-center">
                   <div className="flex flex-col justify-center lg:justify-start">
                     <p className="text-red-800 text-xl text-center lg:text-left font-bold">
-                      {program.title}
+                      {Proker.title}
                     </p>
                     <p className="text-red-800 text-lg text-center lg:text-justify my-3">
-                      {program.description}
+                      {Proker.description}
                     </p>
                   </div>
                   <hr className="border border-gray-200 mt-10 block lg:hidden" />

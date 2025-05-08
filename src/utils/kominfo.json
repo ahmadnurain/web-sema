@@ -1,0 +1,64 @@
+{
+  "default": [
+    {
+      "title": "Departemen Komunikasi & Informasi",
+      "logo": "/kominfo/kominfo.png",
+      "allanggota": "/kominfo/allkominfo.png",
+      "desk": "Departemen Komunikasi & Informasi berperan dalam menyusun dan menyebarluaskan informasi strategis, merancang indikator keberhasilan komunikasi dan publikasi, serta memelihara citra organisasi melalui pengelolaan media, konten kreatif, dan hubungan dengan pemangku kepentingan."
+    }
+  ],
+  "koordinator": [
+    {
+      "nama": "Shalsabila Dwi Aprilia",
+      "instagram": "tes",
+      "image": "/kominfo/caca.png",
+      "title": "Koordinator Departemen Komunikasi & Informasi"
+    }
+  ],
+  "anggota": [
+    {
+      "id": 1,
+      "name": "Temi Mei Sri Utami",
+      "instagram": "sf",
+      "image": "/kominfo/temi.png"
+    },
+    {
+      "id": 2,
+      "name": "Ahmad Nur`Ain",
+      "instagram": "Tes",
+      "image": "/kominfo/ahmad.png"
+    },
+    {
+      "id": 3,
+      "name": "Andi Nugraha Saputra",
+      "instagram": "Tes",
+      "image": "/kominfo/andi.png"
+    },
+    {
+      "id": 4,
+      "name": "Sandi Pirdaus",
+      "instagram": "Tes",
+      "image": "/kominfo/sandi.png"
+    }
+  ],
+  "proker": [
+    {
+      "id": 1,
+      "title": "Lorem",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi exercitationem itaque dolorum dolore repellat natus at tenetur neque corporis vel!",
+      "image": "/Proker/comingsoon.png"
+    },
+    {
+      "id": 2,
+      "title": "Lorem",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius eligendi quisquam ipsa quos alias doloremque, ex quis reprehenderit quasi.",
+      "image": "/Proker/comingsoon.png"
+    },
+    {
+      "id": 3,
+      "title": "Lorem",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur, voluptatem quod quibusdam animi quia quam mollitia veritatis! Aspernatur, corporis.",
+      "image": "/Proker/comingsoon.png"
+    }
+  ]
+}

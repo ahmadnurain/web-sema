@@ -1,0 +1,51 @@
+{
+  "home": [
+    {
+      "logoTeknik": "/teknik.png",
+      "logoKabinet": "/kabinet.png",
+      "logoUnma": "/unma.png",
+      "copyright1": "Senat Mahasiswa Fakultas Teknik UNMA.",
+      "copyright2": "© Copyright 2025 - SEMA FT UNMA.",
+      "teks": "naon wau",
+      "ketua": "Dwi Rizqy Ramadhan",
+      "wakil": "Salman Gibrani Alfaris",
+      "igKetua": "sf",
+      "igWakil": "sf",
+      "image": "/leaders/leaders.png",
+      "teksKetua": "Selamat datang di Website Senat Mahasiswa Fakultas Teknik Universitas Majalengka Kabinet Satya Naraya.",
+      "teksWakil": "Website ini dirancang untuk memudahkan seluruh Keluarga Mahasiswa Fakultas Teknik dalam melihat berbagai kegiatan yang dilaksanakan oleh Senat Mahasiswa Fakultas Teknik.",
+      "kabinet": "Kabinet Satya Naraya",
+      "makna1": "apa ya?",
+      "makna2": "apa?",
+      "visi": "Visi foya Misi FOya ",
+      "visiImage": "Section/home_visi.jpg"
+    }
+  ],
+  "misi": [
+    {
+      "id": 1,
+      "title": "Lorem, ipsum dolor.",
+      "subtitle": "Lorem, ipsum dolor."
+    },
+    {
+      "id": 2,
+      "title": "Lorem, ipsum dolor.",
+      "subtitle": "Lorem, ipsum dolor."
+    },
+    {
+      "id": 3,
+      "title": "Lorem, ipsum dolor.",
+      "subtitle": "Lorem, ipsum dolor."
+    },
+    {
+      "id": 4,
+      "title": "Lorem, ipsum dolor.",
+      "subtitle": "Lorem, ipsum dolor."
+    },
+    {
+      "id": 5,
+      "title": "Lorem, ipsum dolor.",
+      "subtitle": "Lorem, ipsum dolor."
+    }
+  ]
+}

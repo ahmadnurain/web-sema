@@ -120,25 +120,25 @@ const Navbar = () => {
                       BPH
                     </Link>
                     <Link
-                      to="/Department/KOMINFO"
+                      to="/department/kominfo"
                       className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
                     >
                       KOMINFO
                     </Link>
                     <Link
-                      to="/Department/RISTEK"
+                      to="/department/ristek"
                       className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
                     >
                       RISTEK
                     </Link>
                     <Link
-                      to="/Department/ADVOKASI"
+                      to="/department/advokasi"
                       className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
                     >
                       ADVOKASI
                     </Link>
                     <Link
-                      to="/Department/PPSDM"
+                      to="/department/ppsdm"
                       className="  block px-3 py-2 text-black hover:text-white hover:bg-red-800 rounded-md"
                     >
                       PPSDM

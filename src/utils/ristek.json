@@ -1,0 +1,64 @@
+{
+  "default": [
+    {
+      "title": "Departemen Riset & Teknologi",
+      "logo": "/ristek/ristek.png",
+      "allanggota": "/ristek/allristek.png",
+      "desk": "Departemen Riset & Teknologi yang fokus pada pengumpulan, pengolahan, dan pemanfaatan informasi melalui kegiatan penelitian serta pengembangan teknologi untuk mendukung kinerja organisasi dan pengembangan sumber daya mahasiswa. Tujuannya adalah menciptakan solusi berbasis data dan inovasi teknologi dalam menjawab tantangan internal maupun eksternal organisasi."
+    }
+  ],
+  "koordinator": [
+    {
+      "nama": "Nakula Sukma Alkindi",
+      "instagram": "tes",
+      "image": "/ristek/alkindi.png",
+      "title": "Koordinator Departemen Riset & Teknologi"
+    }
+  ],
+  "anggota": [
+    {
+      "id": 1,
+      "name": "Nindi Lestari",
+      "instagram": "sf",
+      "image": "/ristek/nindi.png"
+    },
+    {
+      "id": 2,
+      "name": "Rubby Afkar Gustian",
+      "instagram": "Tes",
+      "image": "/ristek/rubby.png"
+    },
+    {
+      "id": 3,
+      "name": "Titah Syauqi",
+      "instagram": "Tes",
+      "image": "/ristek/syauqi.png"
+    },
+    {
+      "id": 4,
+      "name": "Vickry Afrizal Herdiawan",
+      "instagram": "Tes",
+      "image": "/ristek/vickry.png"
+    }
+  ],
+  "proker": [
+    {
+      "id": 1,
+      "title": "Lorem",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi exercitationem itaque dolorum dolore repellat natus at tenetur neque corporis vel!",
+      "image": "/Proker/comingsoon.png"
+    },
+    {
+      "id": 2,
+      "title": "Lorem",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius eligendi quisquam ipsa quos alias doloremque, ex quis reprehenderit quasi.",
+      "image": "/Proker/comingsoon.png"
+    },
+    {
+      "id": 3,
+      "title": "Lorem",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur, voluptatem quod quibusdam animi quia quam mollitia veritatis! Aspernatur, corporis.",
+      "image": "/Proker/comingsoon.png"
+    }
+  ]
+}

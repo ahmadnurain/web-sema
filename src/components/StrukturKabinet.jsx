@@ -143,7 +143,7 @@ const departmentData = [
     shortName: "BENDAHARA",
   },
   {
-    to: "/Department/KOMINFO",
+    to: "/department/kominfo",
     logoPath: "/departments/kominfo/kominfo.png",
     type: "Departemen",
     fullName: "Komunikasi & Informasi",

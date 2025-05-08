@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import data from "../utils/bph.json";
 
-const DepartemenRistek = () => {
+const Bph = () => {
+  const Default = data.default[0]; // Mengambil objek pertama dari array default
+
   return (
     <div>
       {/* Header Section */}
@@ -29,7 +32,7 @@ const DepartemenRistek = () => {
                   data-aos="fade-down"
                   data-aos-duration="2000"
                 >
-                  Departemen Riset &amp; Teknologi
+                  {Default.title}
                 </p>
                 <hr className="w-screen flex justify-center border-yellow-600 border-b-2" />
               </div>
@@ -40,7 +43,7 @@ const DepartemenRistek = () => {
                 data-aos-duration="2000"
               >
                 <img
-                  src="/Logo/Logo Parlemen BEM UPNVJ.png"
+                  src={`/departments/${Default.logo}`}
                   className="w-44 md:w-60 h-44 md:h-60"
                   alt="Logo Departemen Komunikasi & Informasi"
                 />
@@ -52,21 +55,14 @@ const DepartemenRistek = () => {
                   data-aos="zoom-in"
                   data-aos-duration="2000"
                 >
-                  Departemen Riset & Teknologi berperan dalam mengembangkan
-                  inovasi berbasis penelitian, memajukan kapabilitas teknologi
-                  organisasi, serta menerapkan solusi berbasis data untuk
-                  mendukung pengambilan keputusan strategis. Departemen ini
-                  bertanggung jawab atas eksplorasi tren terkini, pengujian
-                  prototipe, dan peningkatan efisiensi sistem melalui integrasi
-                  tools digital, sambil memastikan keamanan dan keberlanjutan
-                  teknologi yang digunakan.
+                  {Default.desk}
                 </p>
               </div>
 
-              <div className="h-auto flex justify-center mb-5 lg:mb-8">
+              {/* <div className="h-auto flex justify-center mb-5 lg:mb-8">
                 <Link
                   className="bg-red-800 hover:bg-red-900 text-yellow-600 font-bold text-xl md:text-3xl rounded-3xl flex justify-center p-5"
-                  to="/Department/RISTEK/Proker"
+                  to="/department/kominfo/Proker"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -90,14 +86,14 @@ const DepartemenRistek = () => {
                     </svg>
                   </span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
 
       {/* Leader Section */}
-      <div
+      {/* <div
         className="bg-cover w-screen h-full pt-20 lg:mt-20 lg:h-full"
         style={{
           backgroundImage: "url(/Background/background-bemu.html)",
@@ -105,7 +101,7 @@ const DepartemenRistek = () => {
       >
         <div className="bg-gradient-to-b from-white/100 via-white/70 to-white/85 h-full lg:h-full flex flex-col justify-center px-2 md:px-20">
           <div className="flex relative justify-center px-10 lg:px-0">
-            {/* Leader Info */}
+
             <div className="justify-center pr-3 lg:pr-0 w-1/2 lg:w-[30%] lg:mr-16 lg:-mt-16 z-20">
               <div
                 className="relative"
@@ -114,8 +110,8 @@ const DepartemenRistek = () => {
               >
                 <img
                   className="object-cover lg:hidden block z-0"
-                  src="/departments/ristek/alkindi.png"
-                  alt="alkindi"
+                  src={`/departments/${Koordinator.image}`}
+                  alt="Shalsabila Dwi Aprilia"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
               </div>
@@ -125,7 +121,7 @@ const DepartemenRistek = () => {
                 data-aos="fade-down"
                 data-aos-duration="2000"
               >
-                Nakula Sukma Alkindi
+                {Koordinator.nama}
               </p>
 
               <div
@@ -146,7 +142,7 @@ const DepartemenRistek = () => {
                   data-tooltip-target="tooltip-Fariz Ridanhus Akhdan"
                   href="https://www.instagram.com/"
                 >
-                  @username
+                  @{Koordinator.instagram}
                 </a>
               </p>
 
@@ -155,11 +151,11 @@ const DepartemenRistek = () => {
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                Koordinator Departemen Ristek & Teknologi
+                {Koordinator.title}
               </p>
             </div>
 
-            {/* Leader Image (Desktop) */}
+
             <div
               className="hidden relative lg:flex lg:w-2/5 justify-center z-10"
               data-aos="fade-up"
@@ -167,8 +163,8 @@ const DepartemenRistek = () => {
             >
               <img
                 className="object-cover -m-20 z-20"
-                src="/departments/ristek/alkindi.png"
-                alt="alkindi"
+                src={`/departments/${Koordinator.image}`}
+                alt={Koordinator.nama}
               />
             </div>
 
@@ -179,7 +175,7 @@ const DepartemenRistek = () => {
             ></div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Members Section */}
       <div
@@ -196,7 +192,7 @@ const DepartemenRistek = () => {
                 data-aos="fade-down"
                 data-aos-duration="2000"
               >
-                Anggota Ristek
+                Badan Pengawas Harian
               </p>
             </div>
 
@@ -210,24 +206,31 @@ const DepartemenRistek = () => {
 
             <div className="pt-10">
               <div
-                className="flex flex-wrap justify-center text-center text-lg md:text-xl font-normal text-red-800 pb-8 px-4 md:pb-12"
+                className=" flex flex-wrap justify-center text-center text-lg md:text-xl font-normal text-red-800 pb-8 px-4 md:pb-12"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                {/* Member List */}
-                {[
-                  { name: "Nindi Lestari", instagram: "username" },
-                  { name: "Rubby Afkar Gustian", instagram: "username" },
-                  { name: "Titah Syauqi Kusuma", instagram: "username" },
-                  { name: "Vickry Afrizal Herdiawan", instagram: "username" },
-                ].map((member, index) => (
+                {data.anggota.map((orang) => (
                   <div
-                    key={index}
+                    key={orang.id}
                     className="w-1/2 md:w-1/3 lg:w-1/4 py-2 box-border"
                   >
-                    <p>{member.name}</p>
+                    <img
+                      className="object-cover z-10"
+                      src={`/departments/${orang.image}`}
+                      alt={orang.name}
+                    />
+                    <p className="flex flex-col justify-center items-center bg-red-800 border-2 border-yellow-600 text-white text-sm mx-3 px-1 py-1 rounded-lg">
+                      {orang.name}
+                      <hr
+                        className="w-28 md:w-52 justify-center border-warna-kuning border-b-1"
+                        data-aos="fade-down"
+                        data-aos-duration="2000"
+                      />
+                      <span>{orang.jabatan}</span>
+                    </p>
                     <div
-                      id={`tooltip-${member.name.replace(/\s+/g, "-")}`}
+                      id={`tooltip-${orang.name.replace(/\s+/g, "-")}`}
                       role="tooltip"
                       className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
                     >
@@ -236,13 +239,13 @@ const DepartemenRistek = () => {
                     </div>
                     <p className="font-semibold hover:text-yellow-600">
                       <a
-                        data-tooltip-target={`tooltip-${member.name.replace(
+                        data-tooltip-target={`tooltip-${orang.name.replace(
                           /\s+/g,
                           "-"
                         )}`}
-                        href={`https://www.instagram.com/${member.instagram}`}
+                        href={`https://www.instagram.com/${orang.instagram}`}
                       >
-                        @{member.instagram}
+                        @{orang.instagram}
                       </a>
                     </p>
                   </div>
@@ -252,8 +255,8 @@ const DepartemenRistek = () => {
           </div>
         </div>
       </div>
-      <div
-        className="bg-cover w-full"
+      {/* <div
+        className="bg-cover w-full hidden md:block"
         style={{
           backgroundImage: "url(image/Background/background-bemu.html)",
         }}
@@ -265,14 +268,14 @@ const DepartemenRistek = () => {
         >
           <img
             className="z-10"
-            src="/departments/ristek/allristek.png"
+            src={`/departments/${Default.allanggota}`}
             alt=""
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white z-20"></div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default DepartemenRistek;
+export default Bph;

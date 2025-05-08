@@ -1,0 +1,64 @@
+{
+  "default": [
+    {
+      "title": "Departemen Advokasi",
+      "logo": "/advokasi/advokasi.png",
+      "allanggota": "/advokasi/alladvokasi.png",
+      "desk": "Departemen Advokasi bertugas sebagai wadah perwakilan aspirasi dan pembelaan terhadap hak-hak mahasiswa, serta menjadi penghubung antara mahasiswa dengan pihak-pihak terkait seperti pimpinan kampus, birokrasi, atau instansi luar dalam rangka memperjuangkan kepentingan mahasiswa."
+    }
+  ],
+  "koordinator": [
+    {
+      "nama": "Fajri Hidayat",
+      "instagram": "tes",
+      "image": "/advokasi/fazri.png",
+      "title": "Koordinator Departemen Advokasi"
+    }
+  ],
+  "anggota": [
+    {
+      "id": 1,
+      "name": "Novita Sundari",
+      "instagram": "sf",
+      "image": "/advokasi/novita.png"
+    },
+    {
+      "id": 2,
+      "name": "Ardiansyah Hasan",
+      "instagram": "Tes",
+      "image": "/advokasi/ardi.png"
+    },
+    {
+      "id": 3,
+      "name": "Ahmad Beni Sulaeman",
+      "instagram": "Tes",
+      "image": "/advokasi/beni.png"
+    },
+    {
+      "id": 4,
+      "name": "Muhamad Khairudin M.",
+      "instagram": "Tes",
+      "image": "/advokasi/heru.png"
+    }
+  ],
+  "proker": [
+    {
+      "id": 1,
+      "title": "Lorem",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi exercitationem itaque dolorum dolore repellat natus at tenetur neque corporis vel!",
+      "image": "/Proker/comingsoon.png"
+    },
+    {
+      "id": 2,
+      "title": "Lorem",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius eligendi quisquam ipsa quos alias doloremque, ex quis reprehenderit quasi.",
+      "image": "/Proker/comingsoon.png"
+    },
+    {
+      "id": 3,
+      "title": "Lorem",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur, voluptatem quod quibusdam animi quia quam mollitia veritatis! Aspernatur, corporis.",
+      "image": "/Proker/comingsoon.png"
+    }
+  ]
+}

@@ -1,4 +1,7 @@
+import data from "../utils/home.json";
+
 const LeaderSection = () => {
+  const Bro = data.home[0];
   return (
     <div
       className="bg-contain w-full h-full"
@@ -15,7 +18,7 @@ const LeaderSection = () => {
           >
             <img
               className="object-cover w-full xl:h-screen"
-              src="departments/leaders/leaders.png"
+              src={`/departments/${Bro.image}`}
               alt=""
             />
             <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
@@ -27,7 +30,7 @@ const LeaderSection = () => {
               data-aos-duration="2000"
             >
               <p className="text-2xl md:text-3xl mt-10 text-red-800 font-bold">
-                Dwi Rizqy Ramadhan
+                {Bro.ketua}
               </p>
               <div
                 id="tooltip-head"
@@ -40,15 +43,14 @@ const LeaderSection = () => {
               <p className="font-semibold text-warna-kuning hover:text-warna-kuning-dark">
                 <a
                   data-tooltip-target="tooltip-head"
-                  href="https://www.instagram.com/"
+                  href={`https://www.instagram.com/${Bro.igKetua}`}
                 >
-                  @username
+                  @{Bro.igKetua}
                 </a>
               </p>
               <p className="text-red-800 font-bold">Ketua SEMA FT</p>
               <p className="text-justify text-lg md:text-xl text-red-800 font-normal px-3 md:px-0">
-                Selamat datang di Website Senat Mahasiswa Fakultas Teknik
-                Universitas Majalengka Kabinet Satya Naraya.
+                {Bro.teksKetua}
               </p>
             </div>
             <div
@@ -58,7 +60,7 @@ const LeaderSection = () => {
             >
               <img
                 className="object-cover h-1/2 md:h-screen"
-                src="departments/leaders/leaders.png"
+                src={`/departments/${Bro.image}`}
                 alt=""
               />
               <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
@@ -69,7 +71,7 @@ const LeaderSection = () => {
               data-aos-duration="2000"
             >
               <p className="text-2xl md:text-3xl text-red-800 font-bold">
-                Salman Gibrani Alfaris
+                {Bro.wakil}
                 <br />
               </p>
               <div
@@ -83,16 +85,14 @@ const LeaderSection = () => {
               <p className="font-semibold text-warna-kuning hover:text-warna-kuning-dark">
                 <a
                   data-tooltip-target="tooltip-vice"
-                  href="https://www.instagram.com/"
+                  href={`https://www.instagram.com/${Bro.igWakil}`}
                 >
-                  @username
+                  @{Bro.igWakil}
                 </a>
               </p>
               <p className="text-red-800 font-bold">Wakil Ketua SEMA FT</p>
               <p className="text-justify text-lg md:text-xl text-red-800 font-normal px-3 md:px-0">
-                Website ini dirancang untuk memudahkan seluruh Keluarga
-                Mahasiswa Fakultas Teknik dalam melihat berbagai kegiatan yang
-                dilaksanakan oleh Senat Mahasiswa Fakultas Teknik.
+                {Bro.teksWakil}
               </p>
             </div>
           </div>

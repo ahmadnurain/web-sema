@@ -1,7 +1,34 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import departmentData from "../../utils/departmentData";
+import { Link } from "react-router-dom"; // Tambahkan ini di bagian atas file
 
-const DepartemenKominfo = () => {
+const DepartmentPage = () => {
+  const { departmentId } = useParams();
+
+  // Debug: Lihat parameter yang diterima
+  console.log("Department ID:", departmentId);
+  console.log("Available data:", Object.keys(departmentData));
+
+  // Cek apakah departemen ada
+  const departmentExists = departmentData.hasOwnProperty(departmentId);
+
+  if (!departmentExists) {
+    return (
+      <div className="text-center py-20">
+        <h2 className="text-2xl font-bold text-red-600">
+          Departemen {departmentId} tidak ditemukan
+        </h2>
+        <p>
+          Departemen yang tersedia: {Object.keys(departmentData).join(", ")}
+        </p>
+      </div>
+    );
+  }
+
+  const data = departmentData[departmentId];
+  const Default = data.default[0];
+  const Koordinator = data.koordinator[0];
+
   return (
     <div>
       {/* Header Section */}
@@ -29,7 +56,7 @@ const DepartemenKominfo = () => {
                   data-aos="fade-down"
                   data-aos-duration="2000"
                 >
-                  Departemen Komunikasi &amp; Informasi
+                  {Default.title}
                 </p>
                 <hr className="w-screen flex justify-center border-yellow-600 border-b-2" />
               </div>
@@ -40,7 +67,7 @@ const DepartemenKominfo = () => {
                 data-aos-duration="2000"
               >
                 <img
-                  src="/Logo/Logo Parlemen BEM UPNVJ.png"
+                  src={`/departments/${Default.logo}`}
                   className="w-44 md:w-60 h-44 md:h-60"
                   alt="Logo Departemen Komunikasi & Informasi"
                 />
@@ -52,18 +79,14 @@ const DepartemenKominfo = () => {
                   data-aos="zoom-in"
                   data-aos-duration="2000"
                 >
-                  Departemen Komunikasi &amp; Informasi berperan dalam menyusun
-                  dan menyebarluaskan informasi strategis, merancang indikator
-                  keberhasilan komunikasi dan publikasi, serta memelihara citra
-                  organisasi melalui pengelolaan media, konten kreatif, dan
-                  hubungan dengan pemangku kepentingan.
+                  {Default.desk}
                 </p>
               </div>
 
               <div className="h-auto flex justify-center mb-5 lg:mb-8">
                 <Link
                   className="bg-red-800 hover:bg-red-900 text-yellow-600 font-bold text-xl md:text-3xl rounded-3xl flex justify-center p-5"
-                  to="/Department/KOMINFO/Proker"
+                  to={`/department/${departmentId}/proker`}
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -103,7 +126,7 @@ const DepartemenKominfo = () => {
         <div className="bg-gradient-to-b from-white/100 via-white/70 to-white/85 h-full lg:h-full flex flex-col justify-center px-2 md:px-20">
           <div className="flex relative justify-center px-10 lg:px-0">
             {/* Leader Info */}
-            <div className="justify-center pr-3 lg:pr-0 w-1/2 lg:w-[30%] lg:mr-16 lg:-mt-16 z-20">
+            <div className="justify-center pr-3 w-[90%] lg:pr-0 lg:w-[30%] lg:mr-16 lg:-mt-16 z-20">
               <div
                 className="relative"
                 data-aos="fade-down"
@@ -111,7 +134,7 @@ const DepartemenKominfo = () => {
               >
                 <img
                   className="object-cover lg:hidden block z-0"
-                  src="/departments/kominfo/caca.png"
+                  src={`/departments/${Koordinator.image}`}
                   alt="Shalsabila Dwi Aprilia"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
@@ -122,7 +145,7 @@ const DepartemenKominfo = () => {
                 data-aos="fade-down"
                 data-aos-duration="2000"
               >
-                Shalsabila Dwi Aprilia
+                {Koordinator.nama}
               </p>
 
               <div
@@ -143,7 +166,7 @@ const DepartemenKominfo = () => {
                   data-tooltip-target="tooltip-Fariz Ridanhus Akhdan"
                   href="https://www.instagram.com/"
                 >
-                  @username
+                  @{Koordinator.instagram}
                 </a>
               </p>
 
@@ -152,7 +175,7 @@ const DepartemenKominfo = () => {
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                Koordinator Departemen Komunikasi &amp; Informasi
+                {Koordinator.title}
               </p>
             </div>
 
@@ -164,8 +187,8 @@ const DepartemenKominfo = () => {
             >
               <img
                 className="object-cover -m-20 z-20"
-                src="/departments/kominfo/caca.png"
-                alt="Shalsabila Dwi Aprilia"
+                src={`/departments/${Koordinator.image}`}
+                alt={Koordinator.nama}
               />
             </div>
 
@@ -189,17 +212,17 @@ const DepartemenKominfo = () => {
           <div className="w-full flex flex-col justify-center items-center">
             <div className="flex justify-center">
               <p
-                className="text-3xl md:text-4xl text-red-800 font-bold pt-16 lg:mt-20"
+                className="text-center text-2xl md:text-4xl text-red-800 font-bold pt-16 lg:mt-20"
                 data-aos="fade-down"
                 data-aos-duration="2000"
               >
-                Anggota Kominfo
+                Anggota {Default.title}
               </p>
             </div>
 
             <div className="flex justify-center pt-5">
               <hr
-                className="w-28 md:w-52 justify-center border-warna-kuning border-b-2"
+                className="w-64 md:w-2xl justify-center border-warna-kuning border-b-2"
                 data-aos="fade-down"
                 data-aos-duration="2000"
               />
@@ -207,24 +230,25 @@ const DepartemenKominfo = () => {
 
             <div className="pt-10">
               <div
-                className="flex flex-wrap justify-center text-center text-lg md:text-xl font-normal text-red-800 pb-8 px-4 md:pb-12"
+                className=" flex flex-wrap justify-center text-center text-lg md:text-xl font-normal text-red-800 pb-8 px-4 md:pb-12"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                {/* Member List */}
-                {[
-                  { name: "Temi Mei Sri Utami", instagram: "username" },
-                  { name: "Ahmad Nur`Ain", instagram: "username" },
-                  { name: "Andi Nugraha Saputra", instagram: "username" },
-                  { name: "Sandi Pirdaus", instagram: "username" },
-                ].map((member, index) => (
+                {data.anggota.map((orang) => (
                   <div
-                    key={index}
+                    key={orang.id}
                     className="w-1/2 md:w-1/3 lg:w-1/4 py-2 box-border"
                   >
-                    <p>{member.name}</p>
+                    <img
+                      className="object-cover z-10"
+                      src={`/departments/${orang.image}`}
+                      alt={orang.name}
+                    />
+                    <p className="bg-red-800 border-2 border-yellow-600 text-white text-sm mx-3 px-1 py-1 rounded-lg">
+                      {orang.name}
+                    </p>
                     <div
-                      id={`tooltip-${member.name.replace(/\s+/g, "-")}`}
+                      id={`tooltip-${orang.name.replace(/\s+/g, "-")}`}
                       role="tooltip"
                       className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
                     >
@@ -233,13 +257,13 @@ const DepartemenKominfo = () => {
                     </div>
                     <p className="font-semibold hover:text-yellow-600">
                       <a
-                        data-tooltip-target={`tooltip-${member.name.replace(
+                        data-tooltip-target={`tooltip-${orang.name.replace(
                           /\s+/g,
                           "-"
                         )}`}
-                        href={`https://www.instagram.com/${member.instagram}`}
+                        href={`https://www.instagram.com/${orang.instagram}`}
                       >
-                        @{member.instagram}
+                        @{orang.instagram}
                       </a>
                     </p>
                   </div>
@@ -250,7 +274,7 @@ const DepartemenKominfo = () => {
         </div>
       </div>
       <div
-        className="bg-cover w-full"
+        className="bg-cover w-full hidden md:block"
         style={{
           backgroundImage: "url(image/Background/background-bemu.html)",
         }}
@@ -261,8 +285,8 @@ const DepartemenKominfo = () => {
           data-aos-duration="2000"
         >
           <img
-            className="z-10"
-            src="/departments/kominfo/allkominfo.png"
+            className="z-10 opacity-80"
+            src={`/departments/${Default.allanggota}`}
             alt=""
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white z-20"></div>
@@ -272,4 +296,4 @@ const DepartemenKominfo = () => {
   );
 };
 
-export default DepartemenKominfo;
+export default DepartmentPage;
