@@ -129,14 +129,14 @@ const DepartmentCard = ({ to, logoPath, type, fullName, shortName }) => {
 // Department data
 const departmentData = [
   {
-    to: "/Departments",
+    to: "/Department/BPH",
     logoPath: "/departments/sekretaris/sekretaris.png",
     type: "Sekretaris",
     fullName: "Sekretaris Umum",
     shortName: "SEKRETARIS",
   },
   {
-    to: "/Departments",
+    to: "/Department/BPH",
     logoPath: "/departments/bendahara/bendahara.png",
     type: "Bendahara",
     fullName: "Bendahara Umum",
@@ -150,21 +150,21 @@ const departmentData = [
     shortName: "KOMINFO",
   },
   {
-    to: "/Department/RISTEK",
+    to: "/department/ristek",
     logoPath: "/departments/ristek/ristek.png",
     type: "Departemen",
     fullName: "Riset & Teknologi",
     shortName: "RISTEK",
   },
   {
-    to: "/Department/ADVOKASI",
+    to: "/department/ristek",
     logoPath: "/departments/advokasi/advokasi.png",
     type: "Departemen",
     fullName: "Advokasi",
     shortName: "ADVOKASI",
   },
   {
-    to: "/Department/PPSDM",
+    to: "/department/ppsdm",
     logoPath: "/departments/ppsdm/ppsdm.png",
     type: "Departemen",
     fullName: "Pengembangan Potensi Sumber Daya Mahasiswa",
