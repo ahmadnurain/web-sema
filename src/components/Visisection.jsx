@@ -1,4 +1,7 @@
+import data from "../utils/home.json";
+
 const VisiSection = () => {
+  const Visi = data.home[0];
   return (
     <section>
       <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
@@ -11,7 +14,7 @@ const VisiSection = () => {
             >
               <img
                 alt=""
-                src="Section/home_visi.jpg"
+                src={Visi.visiImage}
                 class="absolute inset-0 h-full w-full object-cover rounded-lg"
               />
             </div>
@@ -30,10 +33,7 @@ const VisiSection = () => {
               </h2>
 
               <p class="mt-4 text-white text-xl text-justify">
-                Terwujudnya SEMA FT UNMA Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolores, fuga hic commodi eum beatae dolorum
-                consectetur, dolorem perspiciatis suscipit ipsum nostrum dicta
-                non eius facere debitis reiciendis aliquam quod odio?
+                {Visi.visi}
               </p>
             </div>
           </div>

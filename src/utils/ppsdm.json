@@ -1,0 +1,64 @@
+{
+  "default": [
+    {
+      "title": "Departemen Pengembangan Potensi Sumber Daya Mahasiswa",
+      "logo": "/ppsdm/ppsdm.png",
+      "allanggota": "/ppsdm/allppsdm.png",
+      "desk": "Departemen Pengembangan Potensi Sumber Daya Mahasiswa berfokus pada pembinaan dan pengembangan kapasitas individu mahasiswa melalui pelatihan, workshop, mentoring, dan program pengembangan diri agar dapat menjadi SDM yang unggul, profesional, dan berdaya saing tinggi."
+    }
+  ],
+  "koordinator": [
+    {
+      "nama": "Romansah",
+      "instagram": "tes",
+      "image": "/ppsdm/romansah.png",
+      "title": "Koordinator Departemen Pengembangan Potensi Sumber Daya Mahasiswa"
+    }
+  ],
+  "anggota": [
+    {
+      "id": 1,
+      "name": "Wulidah Kafah",
+      "instagram": "sf",
+      "image": "/ppsdm/wulidah.png"
+    },
+    {
+      "id": 2,
+      "name": "Riki Teguh Maulana",
+      "instagram": "Tes",
+      "image": "/ppsdm/riki.png"
+    },
+    {
+      "id": 3,
+      "name": "Fikri Farhan Fadilah",
+      "instagram": "Tes",
+      "image": "/ppsdm/fikri.png"
+    },
+    {
+      "id": 4,
+      "name": "Heru Yuana",
+      "instagram": "Tes",
+      "image": "/ppsdm/heru.png"
+    }
+  ],
+  "proker": [
+    {
+      "id": 1,
+      "title": "Lorem",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi exercitationem itaque dolorum dolore repellat natus at tenetur neque corporis vel!",
+      "image": "/Proker/comingsoon.png"
+    },
+    {
+      "id": 2,
+      "title": "Lorem",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius eligendi quisquam ipsa quos alias doloremque, ex quis reprehenderit quasi.",
+      "image": "/Proker/comingsoon.png"
+    },
+    {
+      "id": 3,
+      "title": "Lorem",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur, voluptatem quod quibusdam animi quia quam mollitia veritatis! Aspernatur, corporis.",
+      "image": "/Proker/comingsoon.png"
+    }
+  ]
+}
