@@ -87,6 +87,18 @@ const Navbar = () => {
                 ></span>
               </a>
             </li>
+            <li>
+              <a
+                href="/FormAspirasi"
+                className="relative inline-flex items-center px-3 py-2 text-black hover:text-white hover:bg-red-800 lg:hover:text-black lg:hover:bg-white rounded-md group"
+              >
+                Aspirasi
+                <span
+                  className="absolute bottom-2 left-3 h-0.5 bg-red-800 transition-all duration-500 ease-in-out origin-left transform scale-x-0 group-hover:scale-x-100"
+                  style={{ width: "calc(100% - 1.5rem)" }}
+                ></span>
+              </a>
+            </li>
 
             {/* Struktur Dropdown */}
             <li className="relative" ref={dropdownRef}>
