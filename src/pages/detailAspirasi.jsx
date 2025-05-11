@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DetailAspirasi = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [aspirasi, setAspirasi] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -18,36 +18,38 @@ const DetailAspirasi = () => {
   const fetchAspirasi = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(`https://advokasi.tpunesakti.my.id/api/aspirasi/${id}`);
-      
+      const response = await fetch(
+        `https://advokasi.hacodes.web.id/api/aspirasi/${id}`
+      );
+
       if (!response.ok) {
-        throw new Error('Gagal mengambil data');
+        throw new Error("Gagal mengambil data");
       }
-      
+
       const result = await response.json();
       setAspirasi(result.data);
     } catch (err) {
       setError(err.message);
-      console.error('Error:', err);
+      console.error("Error:", err);
     } finally {
       setIsLoading(false);
     }
   };
 
   const handleDelete = async () => {
-    if (!window.confirm('Apakah Anda yakin ingin menghapus data ini?')) return;
-    
+    if (!window.confirm("Apakah Anda yakin ingin menghapus data ini?")) return;
+
     try {
       const response = await fetch(`http://localhost:3001/api/aspirasi/${id}`, {
-        method: 'DELETE',
+        method: "DELETE",
       });
-      
+
       if (!response.ok) {
-        throw new Error('Gagal menghapus data');
+        throw new Error("Gagal menghapus data");
       }
-      
-      alert('Data berhasil dihapus');
-      navigate('/dashboard-advokasi');
+
+      alert("Data berhasil dihapus");
+      navigate("/dashboard-advokasi");
     } catch (err) {
       alert(`Error: ${err.message}`);
     }
@@ -74,12 +76,36 @@ const DetailAspirasi = () => {
   }
 
   const ratingItems = [
-    { label: 'Kepuasan Kuliah', value: aspirasi.kepuasanKuliah, alasan: aspirasi.alasanKuliah },
-    { label: 'Kepuasan Perpustakaan', value: aspirasi.kepuasanPerpustakaan, alasan: aspirasi.alasanPerpustakaan },
-    { label: 'Kepuasan Parkiran', value: aspirasi.kepuasanParkiran, alasan: aspirasi.alasanParkiran },
-    { label: 'Kepuasan Lab', value: aspirasi.kepuasanLab, alasan: aspirasi.alasanLab },
-    { label: 'Kepuasan Kelas', value: aspirasi.kepuasanKelas, alasan: aspirasi.alasanKelas },
-    { label: 'Kepuasan Dosen', value: aspirasi.kepuasanDosen, alasan: aspirasi.alasanDosen }
+    {
+      label: "Kepuasan Kuliah",
+      value: aspirasi.kepuasanKuliah,
+      alasan: aspirasi.alasanKuliah,
+    },
+    {
+      label: "Kepuasan Perpustakaan",
+      value: aspirasi.kepuasanPerpustakaan,
+      alasan: aspirasi.alasanPerpustakaan,
+    },
+    {
+      label: "Kepuasan Parkiran",
+      value: aspirasi.kepuasanParkiran,
+      alasan: aspirasi.alasanParkiran,
+    },
+    {
+      label: "Kepuasan Lab",
+      value: aspirasi.kepuasanLab,
+      alasan: aspirasi.alasanLab,
+    },
+    {
+      label: "Kepuasan Kelas",
+      value: aspirasi.kepuasanKelas,
+      alasan: aspirasi.alasanKelas,
+    },
+    {
+      label: "Kepuasan Dosen",
+      value: aspirasi.kepuasanDosen,
+      alasan: aspirasi.alasanDosen,
+    },
   ];
 
   return (
@@ -88,18 +114,21 @@ const DetailAspirasi = () => {
         <div className="p-6">
           <div className="flex justify-between items-start mb-6">
             <div>
-              <h1 className="text-2xl font-bold text-red-800">Detail Aspirasi</h1>
+              <h1 className="text-2xl font-bold text-red-800">
+                Detail Aspirasi
+              </h1>
               <p className="text-gray-600">
                 Prodi: <span className="font-semibold">{aspirasi.prodi}</span>
               </p>
               <p className="text-gray-600">
-                Tanggal: <span className="font-semibold">
-                  {new Date(aspirasi.createdAt).toLocaleDateString('id-ID', {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
+                Tanggal:{" "}
+                <span className="font-semibold">
+                  {new Date(aspirasi.createdAt).toLocaleDateString("id-ID", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
                   })}
                 </span>
               </p>
@@ -129,8 +158,11 @@ const DetailAspirasi = () => {
                   <div className="w-full bg-gray-200 rounded-full h-2.5">
                     <div
                       className={`h-2.5 rounded-full ${
-                        item.value < 40 ? 'bg-red-500' :
-                        item.value < 70 ? 'bg-yellow-500' : 'bg-green-500'
+                        item.value < 40
+                          ? "bg-red-500"
+                          : item.value < 70
+                          ? "bg-yellow-500"
+                          : "bg-green-500"
                       }`}
                       style={{ width: `${item.value}%` }}
                     ></div>
@@ -145,7 +177,9 @@ const DetailAspirasi = () => {
             {aspirasi.dosenBermasalah && (
               <div className="border-b pb-4">
                 <h3 className="font-semibold text-lg mb-2">Dosen Bermasalah</h3>
-                <p className="text-gray-700 whitespace-pre-line">{aspirasi.dosenBermasalah}</p>
+                <p className="text-gray-700 whitespace-pre-line">
+                  {aspirasi.dosenBermasalah}
+                </p>
               </div>
             )}
 
@@ -153,7 +187,9 @@ const DetailAspirasi = () => {
             {aspirasi.aspirasiLain && (
               <div className="border-b pb-4">
                 <h3 className="font-semibold text-lg mb-2">Aspirasi Lainnya</h3>
-                <p className="text-gray-700 whitespace-pre-line">{aspirasi.aspirasiLain}</p>
+                <p className="text-gray-700 whitespace-pre-line">
+                  {aspirasi.aspirasiLain}
+                </p>
               </div>
             )}
 
@@ -174,7 +210,9 @@ const DetailAspirasi = () => {
                             />
                           ) : (
                             <div className="h-16 w-16 bg-gray-200 flex items-center justify-center rounded">
-                              <span className="text-gray-500 text-xs">File</span>
+                              <span className="text-gray-500 text-xs">
+                                File
+                              </span>
                             </div>
                           )}
                         </div>

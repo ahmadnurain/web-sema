@@ -26,7 +26,9 @@ const DashboardAdvokasi = () => {
   const fetchAspirasiData = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch("https://advokasi.tpunesakti.my.id/api/aspirasi");
+      const response = await fetch(
+        "https://advokasi.hacodes.web.id/api/aspirasi"
+      );
 
       if (!response.ok) {
         throw new Error("Gagal mengambil data");
@@ -46,9 +48,12 @@ const DashboardAdvokasi = () => {
     if (!window.confirm("Apakah Anda yakin ingin menghapus data ini?")) return;
 
     try {
-      const response = await fetch(`https://advokasi.tpunesakti.my.id/api/aspirasi/${id}`, {
-        method: "DELETE",
-      });
+      const response = await fetch(
+        `https://advokasi.hacodes.web.id/api/aspirasi/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Gagal menghapus data");
