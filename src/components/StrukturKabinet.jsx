@@ -37,7 +37,7 @@ const StrukturKabinet = () => {
                 data-aos-duration="2000"
               >
                 <img
-                  src="Logo/Logo%20Parlemen%20BEM%20UPNVJ.png"
+                  src="Logo/Logo Kabinet Sema FT.png"
                   className="w-44 md:w-44 h-44 md:h-44"
                   alt="Logo BEM UPNVJ"
                 />
