@@ -10,23 +10,19 @@ import FormAspirasi from "./pages/FormAspirasi";
 import AdvokasiLogin from "./pages/advokasiLogin";
 import DashboardAdvokasi from "./pages/dashboardAdvokasi";
 import DetailAspirasi from "./pages/detailAspirasi";
+import ScrollToTop from "./components/ScrollToTop"; // sesuaikan path-nya
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Departments" element={<Departments />} />
           <Route path="/Department/BPH" element={<Bph />} />
-          <Route
-            path="/department/:departmentId"
-            element={<DepartmentPage />}
-          />
-          <Route
-            path="/department/:departmentId/proker"
-            element={<ProgramKerjaDepartemen />}
-          />
+          <Route path="/department/:departmentId" element={<DepartmentPage />} />
+          <Route path="/department/:departmentId/proker" element={<ProgramKerjaDepartemen />} />
           <Route path="/FormAspirasi" element={<FormAspirasi />} />
           <Route path="/advokasi-login" element={<AdvokasiLogin />} />
           <Route path="/dashboard-advokasi" element={<DashboardAdvokasi />} />
