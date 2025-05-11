@@ -6,15 +6,15 @@ const Footer = () => {
     <footer className="flex flex-col bg-red-900 rounded-t-3xl text-gray-50 p-10 z-50">
       <div className="footer block lg:flex justify-center items-center">
         {/* Logo Section */}
-        <aside className="flex justify-center lg:justify-around items-center w-full lg:w-fit h-full space-x-4">
-          <a href="https://upnvj.ac.id/" className="w-16 h-16 md:w-16 md:h-16">
-            <img src="/Logo/Logo UPNVJ.png" className="w-full" alt="Logo UPNVJ" />
+        <aside className="flex flex-row justify-center lg:justify-around items-center h-full gap-4">
+          <a href="https://upnvj.ac.id/" className="w-16 h-16">
+            <img src="/Logo/Logo Unma.png" className="w-full h-full object-contain" alt="Logo UPNVJ" />
           </a>
           <a href="/" className="w-16 h-16">
-            <img src="/Logo/Logo BEM UPNVJ.png" className="w-full" alt="Logo BEM UPNVJ" />
+            <img src="/Logo/Logo SEMA FT.png" className="w-full h-full object-contain" alt="Logo BEM UPNVJ" />
           </a>
           <a href="/" className="w-16 h-16">
-            <img src="/Logo/Logo Parlemen BEM UPNVJ.png" className="w-full" alt="Logo Parlemen" />
+            <img src="/Logo/Logo Kabinet Sema FT.png" className="w-full h-full object-contain" alt="Logo Parlemen" />
           </a>
         </aside>
 

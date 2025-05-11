@@ -6,7 +6,7 @@ const FormInput = ({
   handleChange,
   handleFileChange,
   handleSubmit,
-  getRatingLabel,
+
   isSubmitting,
 }) => {
   const questions = [
@@ -42,20 +42,12 @@ const FormInput = ({
     },
   ];
 
-  
-
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       {/* Input Prodi */}
       <div className="mb-6">
         <label className="block mb-2 font-medium">Program Studi</label>
-        <select
-          name="prodi"
-          value={formData.prodi}
-          onChange={handleChange}
-          className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          required
-        >
+        <select name="prodi" value={formData.prodi} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
           <option value="">Pilih Prodi</option>
           <option value="Informatika">Informatika</option>
           <option value="Mesin">Mesin</option>
@@ -69,11 +61,7 @@ const FormInput = ({
         <div key={index} className="mb-6">
           <label className="block mb-2 font-medium">{item.question}</label>
 
-          <Rating
-            name={item.ratingName}
-            value={formData[item.ratingName]}
-            onChange={handleChange}
-          />
+          <Rating name={item.ratingName} value={formData[item.ratingName]} onChange={handleChange} />
 
           <textarea
             name={item.textareaName}
@@ -91,35 +79,19 @@ const FormInput = ({
       <div className="mb-6">
         <label className="block mb-2 font-medium">
           Adakah dosen yang bermasalah selama proses mengajar di FT UNMA?
-          <span className="block text-sm text-gray-300 mt-1">
-            Sebutkan Nama Dosen, Matakuliah dan Prodi
-          </span>
+          <span className="block text-sm text-gray-300 mt-1">Sebutkan Nama Dosen, Matakuliah dan Prodi</span>
         </label>
-        <textarea
-          name="dosenBermasalah"
-          value={formData.dosenBermasalah}
-          onChange={handleChange}
-          className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-800"
-          rows={4}
-        />
+        <textarea name="dosenBermasalah" value={formData.dosenBermasalah} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-800" rows={4} />
       </div>
 
       <div className="mb-6">
         <label className="block mb-2 font-medium">Aspirasi Lainnya</label>
-        <textarea
-          name="aspirasiLain"
-          value={formData.aspirasiLain}
-          onChange={handleChange}
-          className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-800"
-          rows={4}
-        />
+        <textarea name="aspirasiLain" value={formData.aspirasiLain} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-800" rows={4} />
       </div>
 
       {/* Upload File */}
       <div className="mb-8">
-        <label className="block mb-2 font-medium">
-          Upload Bukti (Maksimal 5 file, 100MB total)
-        </label>
+        <label className="block mb-2 font-medium">Upload Bukti (Maksimal 5 file, 100MB total)</label>
         <input
           type="file"
           multiple
@@ -132,18 +104,10 @@ const FormInput = ({
             hover:file:bg-yellow-600"
           accept="image/*,.pdf,.doc,.docx"
         />
-        {files.length > 0 && (
-          <p className="mt-2 text-sm text-gray-300">
-            File terpilih: {files.length}
-          </p>
-        )}
+        {files.length > 0 && <p className="mt-2 text-sm text-gray-300">File terpilih: {files.length}</p>}
       </div>
 
-      <button
-        type="submit"
-        className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg transition duration-200 shadow-md"
-        disabled={isSubmitting}
-      >
+      <button type="submit" className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg transition duration-200 shadow-md" disabled={isSubmitting}>
         {isSubmitting ? "Mengirim..." : "Kirim Aspirasi"}
       </button>
     </form>

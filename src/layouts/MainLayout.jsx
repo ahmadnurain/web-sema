@@ -11,7 +11,7 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="overflow-x-hidden">{children}</main>
       <Footer />
     </>
   );
