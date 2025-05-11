@@ -201,79 +201,61 @@ const DepartmentPage = () => {
         </div>
       </div>
 
-      {/* Members Section */}
       <div
-        className="bg-cover w-full"
+        className="bg-cover w-screen h-full lg:h-full my-10 lg:my-12 lg:mt-36"
         style={{
-          backgroundImage: "url(/Background/background-bemu.html)",
+          backgroundImage: "url(image/Background/background-bemu.html)",
         }}
       >
-        <div className="bg-white/85 flex justify-center">
-          <div className="w-full flex flex-col justify-center items-center">
-            <div className="flex justify-center">
-              <p
-                className="text-center text-2xl md:text-4xl text-red-800 font-bold pt-16 lg:mt-20"
-                data-aos="fade-down"
-                data-aos-duration="2000"
-              >
-                Anggota {Default.title}
-              </p>
-            </div>
-
-            <div className="flex justify-center pt-5">
-              <hr
-                className="w-64 md:w-2xl justify-center border-warna-kuning border-b-2"
-                data-aos="fade-down"
-                data-aos-duration="2000"
-              />
-            </div>
-
-            <div className="pt-10">
-              <div
-                className=" flex flex-wrap justify-center text-center text-lg md:text-xl font-normal text-red-800 pb-8 px-4 md:pb-12"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                {data.anggota.map((orang) => (
-                  <div
-                    key={orang.id}
-                    className="w-1/2 md:w-1/3 lg:w-1/4 py-2 box-border"
-                  >
-                    <img
-                      className="object-cover z-10"
-                      src={`/departments/${orang.image}`}
-                      alt={orang.name}
-                    />
-                    <p className="bg-red-800 border-2 border-yellow-600 text-white text-sm mx-3 px-1 py-1 rounded-lg">
-                      {orang.name}
-                    </p>
-                    <div
-                      id={`tooltip-${orang.name.replace(/\s+/g, "-")}`}
-                      role="tooltip"
-                      className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+        <div className="bg-white/85 w-screen h-full lg:h-full flex flex-col justify-center px-4 md:px-20">
+          {/* Grid Container */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 w-full">
+            {/* Item 1 */}
+            {data.anggota.map((orang) => (
+              <div key={orang.id} className="flex flex-col items-center">
+                <div
+                  className="relative w-full aspect-square flex justify-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <img
+                    className="object-cover w-full h-full"
+                    src={`/departments/${orang.image}`}
+                    alt={orang.name}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
+                </div>
+                <div
+                  className="text-center mt-2"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <p className="text-lg md:text-xl text-warna-hijau font-normal">
+                    {orang.name}
+                  </p>
+                  <p className="font-semibold text-yellow-600 hover:underline text-base md:text-lg">
+                    <a
+                      href={`https://www.instagram.com/${orang.instagram}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <i className="fa-brands fa-instagram"></i> Instagram
-                      <div className="tooltip-arrow" data-popper-arrow></div>
-                    </div>
-                    <p className="font-semibold hover:text-yellow-600">
-                      <a
-                        data-tooltip-target={`tooltip-${orang.name.replace(
-                          /\s+/g,
-                          "-"
-                        )}`}
-                        href={`https://www.instagram.com/${orang.instagram}`}
-                      >
-                        @{orang.instagram}
-                      </a>
-                    </p>
-                  </div>
-                ))}
+                      @{orang.instagram}
+                    </a>
+                  </p>
+                  <p className="hidden lg:block text-lg md:text-xl text-warna-hijau font-semibold">
+                    Anggota {Default.title}
+                  </p>
+                  <p className="lg:hidden text-lg md:text-xl text-warna-hijau font-semibold">
+                    Anggota
+                  </p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-      <div
+
+      {/* <div
         className="bg-cover w-full hidden md:block"
         style={{
           backgroundImage: "url(image/Background/background-bemu.html)",
@@ -291,7 +273,7 @@ const DepartmentPage = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white z-20"></div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

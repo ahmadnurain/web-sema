@@ -6,6 +6,10 @@ import Departments from "./pages/Departments";
 import DepartmentPage from "./pages/Department/[departmentId]";
 import ProgramKerjaDepartemen from "./pages/Department/proker";
 import Bph from "./pages/BphPage";
+import FormAspirasi from "./pages/FormAspirasi";
+import AdvokasiLogin from "./pages/advokasiLogin";
+import DashboardAdvokasi from "./pages/dashboardAdvokasi";
+import DetailAspirasi from "./pages/detailAspirasi";
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
             path="/department/:departmentId/proker"
             element={<ProgramKerjaDepartemen />}
           />
+          <Route path="/FormAspirasi" element={<FormAspirasi />} />
+          <Route path="/advokasi-login" element={<AdvokasiLogin />} />
+          <Route path="/dashboard-advokasi" element={<DashboardAdvokasi />} />
+          <Route path="/detail-aspirasi/:id" element={<DetailAspirasi />} />
         </Routes>
       </MainLayout>
     </Router>
