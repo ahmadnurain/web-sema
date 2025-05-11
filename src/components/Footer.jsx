@@ -14,7 +14,7 @@ const Footer = () => {
             <img src="/Logo/Logo SEMA FT.png" className="w-full h-full object-contain" alt="Logo BEM UPNVJ" />
           </a>
           <a href="/" className="w-16 h-16">
-            <img src="/Logo/Logo Kabinet Sema FT.png" className="w-full h-full object-contain" alt="Logo Parlemen" />
+            <img src="/Logo/Logo Kabinet Sema FT2.png" className="w-full h-full object-contain" alt="Logo Parlemen" />
           </a>
         </aside>
 
