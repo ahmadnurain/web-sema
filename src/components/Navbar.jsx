@@ -55,11 +55,11 @@ const Navbar = () => {
       ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
     >
       {/* Navbar content di sini */}
-      <div className="w-full flex flex-wrap items-center justify-between mx-auto py-4 px-8 md:px-12">
+      <div className="w-full flex flex-wrap items-center justify-between mx-auto py-2 px-8 md:px-12">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
-          <img src="/Logo/Logo SEMA FT.png" className="h-16 md:h-12" />
-          <img src="/Logo/Logo Kabinet Sema FT.png" className="h-12 md:h-10" />
+          <img src="/Logo/Logo SEMA FT.png" className="h-12 md:h-12" />
+          <img src="/Logo/Logo Kabinet Sema FT.png" className="h-10 md:h-10" />
         </a>
 
         {/* Hamburger dengan animasi */}
