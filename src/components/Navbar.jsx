@@ -113,7 +113,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/FormAspirasi"
+                href="/formaspirasi"
                 className="relative inline-flex items-center px-3 py-2 text-black hover:text-white hover:bg-red-800 lg:hover:text-black lg:hover:bg-white rounded-md group"
               >
                 Aspirasi

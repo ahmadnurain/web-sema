@@ -23,7 +23,7 @@ function App() {
           <Route path="/Department/BPH" element={<Bph />} />
           <Route path="/department/:departmentId" element={<DepartmentPage />} />
           <Route path="/department/:departmentId/proker" element={<ProgramKerjaDepartemen />} />
-          <Route path="/FormAspirasi" element={<FormAspirasi />} />
+          <Route path="/formaspirasi" element={<FormAspirasi />} />
           <Route path="/advokasi-login" element={<AdvokasiLogin />} />
           <Route path="/dashboard-advokasi" element={<DashboardAdvokasi />} />
           <Route path="/detail-aspirasi/:id" element={<DetailAspirasi />} />

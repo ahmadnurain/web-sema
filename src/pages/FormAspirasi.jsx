@@ -58,23 +58,23 @@ const FormAspirasi = () => {
               <p className="font-bold">Contact:</p>
               <a
                 className="hover:underline"
-                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=birosppi@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=email@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <p>
                   <i className="fa-regular fa-envelope me-1"></i>
-                  birosppi@gmail.com
+                  email@gmail.com
                 </p>
               </a>
               <a
                 className="hover:underline"
-                href="https://line.me/ti/p/~sarahczh_"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <p>
-                  <i className="fa-brands fa-line me-1"></i>sarahczh_
+                  <i className="fa-brands fa-line me-1"></i>username
                 </p>
               </a>
             </div>
