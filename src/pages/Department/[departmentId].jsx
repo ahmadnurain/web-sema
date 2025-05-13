@@ -10,13 +10,20 @@ const DepartmentPage = () => {
   console.log("Available data:", Object.keys(departmentData));
 
   // Cek apakah departemen ada
-  const departmentExists = Object.prototype.hasOwnProperty.call(departmentData, departmentId);
+  const departmentExists = Object.prototype.hasOwnProperty.call(
+    departmentData,
+    departmentId
+  );
 
   if (!departmentExists) {
     return (
       <div className="text-center py-20">
-        <h2 className="text-2xl font-bold text-red-600">Departemen {departmentId} tidak ditemukan</h2>
-        <p>Departemen yang tersedia: {Object.keys(departmentData).join(", ")}</p>
+        <h2 className="text-2xl font-bold text-red-600">
+          Departemen {departmentId} tidak ditemukan
+        </h2>
+        <p>
+          Departemen yang tersedia: {Object.keys(departmentData).join(", ")}
+        </p>
       </div>
     );
   }
@@ -31,39 +38,74 @@ const DepartmentPage = () => {
       <div
         className="bg-cover h-[130vh] md:h-[110vh] flex justify-center"
         style={{
-          backgroundImage: "url(/Background/1234.png)",
+          backgroundImage: "url(/Background/1234.webp)",
         }}
       >
         <div className="bg-gradient-to-t from-white/100 via-white/70 lg:via-white/50 to-white/50 lg:to-white/30 absolute inset-0 flex justify-center items-center h-[130vh] md:h-[110vh]">
           <div className="bg-gradient-to-t from-white/100 via-white/50 to-white/0 absolute inset-0 flex justify-center items-center h-[130vh] md:h-[110vh]">
             <div className="w-full text-center text-red-800 justify-center">
-              <p className="text-5xl md:text-8xl font-bold mt-32 lg:mt-20 pt-24" data-aos="fade-down" data-aos-duration="2000">
+              <p
+                className="text-5xl md:text-8xl font-bold mt-32 lg:mt-20 pt-24"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
                 Struktur Organisasi
               </p>
 
               <div className="flex justify-center items-center pt-10">
                 <hr className="w-screen flex justify-center border-yellow-600 border-b-2" />
-                <p className="text-2xl md:text-3xl font-bold md:font-semibold inline lg:whitespace-nowrap px-5 lg:px-10" data-aos="fade-down" data-aos-duration="2000">
+                <p
+                  className="text-2xl md:text-3xl font-bold md:font-semibold inline lg:whitespace-nowrap px-5 lg:px-10"
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
+                >
                   {Default.title}
                 </p>
                 <hr className="w-screen flex justify-center border-yellow-600 border-b-2" />
               </div>
 
-              <div className="w-full flex justify-center text-center" data-aos="zoom-in" data-aos-duration="2000">
-                <img src={`/departments/${Default.logo}`} className="w-44 md:w-60 h-44 md:h-60" alt="Logo Departemen Komunikasi & Informasi" />
+              <div
+                className="w-full flex justify-center text-center"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <img
+                  src={`/departments/${Default.logo}`}
+                  className="w-44 md:w-60 h-44 md:h-60"
+                  alt="Logo Departemen Komunikasi & Informasi"
+                />
               </div>
 
               <div className="w-full flex justify-center text-center mb-3 lg:mb-10">
-                <p className="w-[80%] text-lg md:text-xl text-red-800 font-normal" data-aos="zoom-in" data-aos-duration="2000">
+                <p
+                  className="w-[80%] text-lg md:text-xl text-red-800 font-normal"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
                   {Default.desk}
                 </p>
               </div>
 
               <div className="h-auto flex justify-center mb-5 lg:mb-8">
-                <Link className="bg-red-800 hover:bg-red-900 text-yellow-600 font-bold text-xl md:text-3xl rounded-3xl flex justify-center p-5" to={`/department/${departmentId}/proker`} data-aos="fade-up" data-aos-duration="2000">
+                <Link
+                  className="bg-red-800 hover:bg-red-900 text-yellow-600 font-bold text-xl md:text-3xl rounded-3xl flex justify-center p-5"
+                  to={`/department/${departmentId}/proker`}
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Program Kerja
                   <span className="pl-1 items-center flex justify-center">
-                    <svg className="w-7 md:w-9 h-7 md:h-9 text-yellow-600" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      className="w-7 md:w-9 h-7 md:h-9 text-yellow-600"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path stroke="none" d="M0 0h24v24H0z" />
                       <polyline points="12 4 4 8 12 12 20 8 12 4" />
                       <polyline points="4 12 12 16 20 12" />
@@ -88,12 +130,24 @@ const DepartmentPage = () => {
           <div className="flex relative justify-center px-10 lg:px-0">
             {/* Leader Info */}
             <div className="justify-center pr-3 w-[90%] lg:pr-0 lg:w-[30%] lg:mr-16 lg:-mt-16 z-20">
-              <div className="relative" data-aos="fade-down" data-aos-duration="2000">
-                <img className="object-cover lg:hidden block z-0" src={`/departments/${Koordinator.image}`} alt="Shalsabila Dwi Aprilia" />
+              <div
+                className="relative"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
+                <img
+                  className="object-cover lg:hidden block z-0"
+                  src={`/departments/${Koordinator.image}`}
+                  alt="Shalsabila Dwi Aprilia"
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
               </div>
 
-              <p className="text-xl lg:text-3xl text-red-800 font-normal text-center lg:text-end" data-aos="fade-down" data-aos-duration="2000">
+              <p
+                className="text-xl lg:text-3xl text-red-800 font-normal text-center lg:text-end"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
                 {Koordinator.nama}
               </p>
 
@@ -106,23 +160,46 @@ const DepartmentPage = () => {
                 <div className="tooltip-arrow" data-popper-arrow></div>
               </div>
 
-              <p className="font-normal text-yellow-600 hover:underline text-xl lg:text-2xl text-center lg:text-end" data-aos="fade-down" data-aos-duration="2000">
-                <a data-tooltip-target="tooltip-Fariz Ridanhus Akhdan" href="https://www.instagram.com/">
+              <p
+                className="font-normal text-yellow-600 hover:underline text-xl lg:text-2xl text-center lg:text-end"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
+                <a
+                  data-tooltip-target="tooltip-Fariz Ridanhus Akhdan"
+                  href="https://www.instagram.com/"
+                >
                   @{Koordinator.instagram}
                 </a>
               </p>
 
-              <p className="text-xl lg:text-2xl text-red-800 font-semibold lg:font-bold text-center lg:text-end" data-aos="fade-up" data-aos-duration="2000">
+              <p
+                className="text-xl lg:text-2xl text-red-800 font-semibold lg:font-bold text-center lg:text-end"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 {Koordinator.title}
               </p>
             </div>
 
             {/* Leader Image (Desktop) */}
-            <div className="hidden relative lg:flex lg:w-2/5 justify-center z-10" data-aos="fade-up" data-aos-duration="2000">
-              <img className="object-cover -m-20 z-20" src={`/departments/${Koordinator.image}`} alt={Koordinator.nama} />
+            <div
+              className="hidden relative lg:flex lg:w-2/5 justify-center z-10"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <img
+                className="object-cover -m-20 z-20"
+                src={`/departments/${Koordinator.image}`}
+                alt={Koordinator.nama}
+              />
             </div>
 
-            <div className="absolute hidden lg:block w-full -mt-36 -mb-24 z-30 inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white" data-aos="fade-up" data-aos-duration="2000"></div>
+            <div
+              className="absolute hidden lg:block w-full -mt-36 -mb-24 z-30 inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            ></div>
           </div>
         </div>
       </div>
@@ -139,19 +216,41 @@ const DepartmentPage = () => {
             {/* Item 1 */}
             {data.anggota.map((orang) => (
               <div key={orang.id} className="flex flex-col items-center">
-                <div className="relative w-full aspect-square flex justify-center" data-aos="fade-up" data-aos-duration="2000">
-                  <img className="object-cover w-full h-full" src={`/departments/${orang.image}`} alt={orang.name} />
+                <div
+                  className="relative w-full aspect-square flex justify-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <img
+                    className="object-cover w-full h-full"
+                    src={`/departments/${orang.image}`}
+                    alt={orang.name}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
                 </div>
-                <div className="text-center mt-2" data-aos="fade-up" data-aos-duration="2000">
-                  <p className="text-lg md:text-xl text-warna-hijau font-normal">{orang.name}</p>
+                <div
+                  className="text-center mt-2"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <p className="text-lg md:text-xl text-warna-hijau font-normal">
+                    {orang.name}
+                  </p>
                   <p className="font-semibold text-yellow-600 hover:underline text-base md:text-lg">
-                    <a href={`https://www.instagram.com/${orang.instagram}`} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={`https://www.instagram.com/${orang.instagram}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       @{orang.instagram}
                     </a>
                   </p>
-                  <p className="hidden lg:block text-lg md:text-xl text-warna-hijau font-semibold">Anggota {Default.title}</p>
-                  <p className="lg:hidden text-lg md:text-xl text-warna-hijau font-semibold">Anggota</p>
+                  <p className="hidden lg:block text-lg md:text-xl text-warna-hijau font-semibold">
+                    Anggota {Default.title}
+                  </p>
+                  <p className="lg:hidden text-lg md:text-xl text-warna-hijau font-semibold">
+                    Anggota
+                  </p>
                 </div>
               </div>
             ))}

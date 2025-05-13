@@ -15,11 +15,15 @@ const FormAspirasi = () => {
         <div
           className="h-64 w-full bg-repeat-y bg-cover flex justify-center items-center"
           style={{
-            backgroundImage: "url(/Background/background-header2.png)",
+            backgroundImage: "url(/Background/background-header2.webp)",
           }}
         >
           <div className="px-10 bg-gradient-to-t from-white/100 via-white/50 to-white/10 inset-0 flex justify-center items-center h-full w-full border-warna-kuning border-b-2">
-            <h1 className="mt-14 text-red-800 text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center font-bold" data-aos="fade-down" data-aos-duration="2000">
+            <h1
+              className="mt-14 text-red-800 text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center font-bold"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
               ASPIRASI MAHASISWA FT UNMA
               <br />
               2025/2026
@@ -27,13 +31,24 @@ const FormAspirasi = () => {
           </div>
         </div>
         <div className="flex lg:justify-around flex-col lg:flex-row md:px-14 pt-7 p-10 lg:gap-12 text-red-800 text-justify items-center xl:items-start">
-          <div className="bg-red-800 w-full h-full mb-10 md:w-2/3 xl:mt-10 lg:w-1/2 p-5 rounded-xl text-white" data-aos="fade-up" data-aos-duration="2000">
+          <div
+            className="bg-red-800 w-full h-full mb-10 md:w-2/3 xl:mt-10 lg:w-1/2 p-5 rounded-xl text-white"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <FormInputWithLogic />
           </div>
-          <div className="mb-7 md:mb-10 md:text-lg lg:w-1/2 xl:w-2/5 xl:mt-10" data-aos="fade-up" data-aos-duration="2000">
+          <div
+            className="mb-7 md:mb-10 md:text-lg lg:w-1/2 xl:w-2/5 xl:mt-10"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <p>
-              Untuk kalian yang mempunyai aspirasi terkait masalah yang dirasakan selama menjadi mahasiswa di Fakultas Teknik UNMA bisa di sampaikan melalui form ini. (Setiap aspirasi yang saudara sampaikan bersifat privasi dan terhindar
-              dari setiap intervensi/ancaman).
+              Untuk kalian yang mempunyai aspirasi terkait masalah yang
+              dirasakan selama menjadi mahasiswa di Fakultas Teknik UNMA bisa di
+              sampaikan melalui form ini. (Setiap aspirasi yang saudara
+              sampaikan bersifat privasi dan terhindar dari setiap
+              intervensi/ancaman).
             </p>
             <p className="font-bold mt-5 md:text-lg">
               Kind Regards, <br />
@@ -41,13 +56,23 @@ const FormAspirasi = () => {
             </p>
             <div className="text-yellow-600 mt-4">
               <p className="font-bold">Contact:</p>
-              <a className="hover:underline" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=birosppi@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a
+                className="hover:underline"
+                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=birosppi@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <p>
                   <i className="fa-regular fa-envelope me-1"></i>
                   birosppi@gmail.com
                 </p>
               </a>
-              <a className="hover:underline" href="https://line.me/ti/p/~sarahczh_" target="_blank" rel="noopener noreferrer">
+              <a
+                className="hover:underline"
+                href="https://line.me/ti/p/~sarahczh_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <p>
                   <i className="fa-brands fa-line me-1"></i>sarahczh_
                 </p>
@@ -118,7 +143,9 @@ const FormInputWithLogic = () => {
 
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+        throw new Error(
+          errorData.message || `HTTP error! status: ${response.status}`
+        );
       }
 
       const result = await response.json();
@@ -157,14 +184,25 @@ const FormInputWithLogic = () => {
     const selectedFiles = Array.from(e.target.files).slice(0, 5);
 
     // Validasi ekstensi file
-    const allowedExtensions = [".jpg", ".jpeg", ".png", ".pdf", ".doc", ".docx"];
+    const allowedExtensions = [
+      ".webp",
+      ".jpeg",
+      ".webp",
+      ".pdf",
+      ".doc",
+      ".docx",
+    ];
     const invalidFiles = selectedFiles.filter((file) => {
       const ext = file.name.slice(file.name.lastIndexOf(".")).toLowerCase();
       return !allowedExtensions.includes(ext);
     });
 
     if (invalidFiles.length > 0) {
-      alert(`File berikut tidak diizinkan: ${invalidFiles.map((f) => f.name).join(", ")}`);
+      alert(
+        `File berikut tidak diizinkan: ${invalidFiles
+          .map((f) => f.name)
+          .join(", ")}`
+      );
       e.target.value = ""; // Reset input file
       return;
     }
@@ -172,7 +210,17 @@ const FormInputWithLogic = () => {
     setFiles(selectedFiles);
   };
 
-  return <FormInput formData={formData} files={files} handleChange={handleChange} handleFileChange={handleFileChange} handleSubmit={handleSubmit} getRatingLabel={getRatingLabel} isSubmitting={isSubmitting} />;
+  return (
+    <FormInput
+      formData={formData}
+      files={files}
+      handleChange={handleChange}
+      handleFileChange={handleFileChange}
+      handleSubmit={handleSubmit}
+      getRatingLabel={getRatingLabel}
+      isSubmitting={isSubmitting}
+    />
+  );
 };
 
 export default FormAspirasi;

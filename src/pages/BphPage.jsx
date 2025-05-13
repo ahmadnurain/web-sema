@@ -11,30 +11,50 @@ const Bph = () => {
       <div
         className="bg-cover h-[130vh] md:h-[110vh] flex justify-center"
         style={{
-          backgroundImage: "url(/Background/1234.png)",
+          backgroundImage: "url(/Background/1234.webp)",
         }}
       >
         <div className="bg-gradient-to-t from-white/100 via-white/70 lg:via-white/50 to-white/50 lg:to-white/30 absolute inset-0 flex justify-center items-center h-[130vh] md:h-[110vh]">
           <div className="bg-gradient-to-t from-white/100 via-white/50 to-white/0 absolute inset-0 flex justify-center items-center h-[130vh] md:h-[110vh]">
             <div className="w-full text-center text-red-800 justify-center">
-              <p className="text-5xl md:text-8xl font-bold mt-32 lg:mt-20 pt-24" data-aos="fade-down" data-aos-duration="2000">
+              <p
+                className="text-5xl md:text-8xl font-bold mt-32 lg:mt-20 pt-24"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
                 Struktur Organisasi
               </p>
 
               <div className="flex justify-center items-center pt-10">
                 <hr className="w-screen flex justify-center border-yellow-600 border-b-2" />
-                <p className="text-2xl md:text-3xl font-bold md:font-semibold inline lg:whitespace-nowrap px-5 lg:px-10" data-aos="fade-down" data-aos-duration="2000">
+                <p
+                  className="text-2xl md:text-3xl font-bold md:font-semibold inline lg:whitespace-nowrap px-5 lg:px-10"
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
+                >
                   {Default.title}
                 </p>
                 <hr className="w-screen flex justify-center border-yellow-600 border-b-2" />
               </div>
 
-              <div className="w-full flex justify-center text-center" data-aos="zoom-in" data-aos-duration="2000">
-                <img src={`/departments/${Default.logo}`} className="w-44 md:w-60 h-44 md:h-60" alt="Logo Departemen Komunikasi & Informasi" />
+              <div
+                className="w-full flex justify-center text-center"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <img
+                  src={`/departments/${Default.logo}`}
+                  className="w-44 md:w-60 h-44 md:h-60"
+                  alt="Logo Departemen Komunikasi & Informasi"
+                />
               </div>
 
               <div className="w-full flex justify-center text-center mb-3 lg:mb-10">
-                <p className="w-[80%] text-lg md:text-xl text-red-800 font-normal" data-aos="zoom-in" data-aos-duration="2000">
+                <p
+                  className="w-[80%] text-lg md:text-xl text-red-800 font-normal"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
                   {Default.desk}
                 </p>
               </div>
@@ -167,13 +187,21 @@ const Bph = () => {
         <div className="bg-white/85 flex justify-center">
           <div className="w-full flex flex-col justify-center items-center">
             <div className="flex justify-center">
-              <p className="text-3xl md:text-4xl text-red-800 font-bold pt-16 lg:mt-20" data-aos="fade-down" data-aos-duration="2000">
+              <p
+                className="text-3xl md:text-4xl text-red-800 font-bold pt-16 lg:mt-20"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
                 Badan Pengawas Harian
               </p>
             </div>
 
             <div className="flex justify-center pt-5">
-              <hr className="w-28 md:w-52 justify-center border-warna-kuning border-b-2" data-aos="fade-down" data-aos-duration="2000" />
+              <hr
+                className="w-28 md:w-52 justify-center border-warna-kuning border-b-2"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              />
             </div>
           </div>
         </div>
@@ -191,18 +219,38 @@ const Bph = () => {
             {/* Item 1 */}
             {data.anggota.map((orang) => (
               <div key={orang.id} className="flex flex-col items-center">
-                <div className="relative w-full aspect-square flex justify-center" data-aos="fade-up" data-aos-duration="2000">
-                  <img className="object-cover w-full h-full" src={`/departments/${orang.image}`} alt={orang.name} />
+                <div
+                  className="relative w-full aspect-square flex justify-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <img
+                    className="object-cover w-full h-full"
+                    src={`/departments/${orang.image}`}
+                    alt={orang.name}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white"></div>
                 </div>
-                <div className="text-center mt-2" data-aos="fade-up" data-aos-duration="2000">
-                  <p className="text-lg md:text-xl text-warna-hijau font-normal">{orang.name}</p>
+                <div
+                  className="text-center mt-2"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <p className="text-lg md:text-xl text-warna-hijau font-normal">
+                    {orang.name}
+                  </p>
                   <p className="font-semibold text-yellow-600 hover:underline text-base md:text-lg">
-                    <a href={`https://www.instagram.com/${orang.instagram}`} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={`https://www.instagram.com/${orang.instagram}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       @{orang.instagram}
                     </a>
                   </p>
-                  <p className="text-lg md:text-xl text-warna-hijau font-semibold">{orang.jabatan}</p>
+                  <p className="text-lg md:text-xl text-warna-hijau font-semibold">
+                    {orang.jabatan}
+                  </p>
                 </div>
               </div>
             ))}

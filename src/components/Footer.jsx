@@ -8,13 +8,25 @@ const Footer = () => {
         {/* Logo Section */}
         <aside className="flex flex-row justify-center lg:justify-around items-center h-full gap-4">
           <a href="https://upnvj.ac.id/" className="w-16 h-16">
-            <img src="/Logo/Logo Unma.png" className="w-full h-full object-contain" alt="Logo UPNVJ" />
+            <img
+              src="/Logo/Logo Unma.webp"
+              className="w-full h-full object-contain"
+              alt="Logo UPNVJ"
+            />
           </a>
           <a href="/" className="w-16 h-16">
-            <img src="/Logo/Logo SEMA FT.png" className="w-full h-full object-contain" alt="Logo BEM UPNVJ" />
+            <img
+              src="/Logo/Logo SEMA FT.webp"
+              className="w-full h-full object-contain"
+              alt="Logo BEM UPNVJ"
+            />
           </a>
           <a href="/" className="w-16 h-16">
-            <img src="/Logo/Logo Kabinet Sema FT2.png" className="w-full h-full object-contain" alt="Logo Parlemen" />
+            <img
+              src="/Logo/Logo Kabinet Sema FT2.webp"
+              className="w-full h-full object-contain"
+              alt="Logo Parlemen"
+            />
           </a>
         </aside>
 
@@ -24,9 +36,16 @@ const Footer = () => {
         {/* Text Section */}
         <nav className="flex w-full lg:w-3/5 h-full justify-center items-center text-center lg:text-left">
           <p className="text-justify pr-0 lg:pr-10 py-10 lg:py-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ullam aut, hic, consequatur eveniet numquam pariatur at tempore illo veniam libero similique in exercitationem esse culpa enim modi adipisci maiores dolor! Asperiores
-            temporibus natus aspernatur ipsum. Facere aperiam hic voluptatibus fuga alias consectetur nostrum, voluptas sapiente ut, possimus pariatur ullam. Doloribus, expedita laborum asperiores officia corporis perferendis sed? Officia
-            asperiores rem totam corporis fugit, accusamus iusto rerum quia aliquam quasi libero dolor aspernatur tenetur soluta odit cum, exercitationem molestiae. Consectetur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ullam
+            aut, hic, consequatur eveniet numquam pariatur at tempore illo
+            veniam libero similique in exercitationem esse culpa enim modi
+            adipisci maiores dolor! Asperiores temporibus natus aspernatur
+            ipsum. Facere aperiam hic voluptatibus fuga alias consectetur
+            nostrum, voluptas sapiente ut, possimus pariatur ullam. Doloribus,
+            expedita laborum asperiores officia corporis perferendis sed?
+            Officia asperiores rem totam corporis fugit, accusamus iusto rerum
+            quia aliquam quasi libero dolor aspernatur tenetur soluta odit cum,
+            exercitationem molestiae. Consectetur?
           </p>
         </nav>
 
@@ -34,11 +53,17 @@ const Footer = () => {
         <nav className="ml-3 lg:ml-0 lg:mt-3">
           <h6 className="footer-title  font-semibold mb-2">Our Social Media</h6>
           <div className="flex flex-col space-y-2">
-            <a href="https://instagram.com/sema_ftunma" className="hover:underline hover:text-warna-kuning">
+            <a
+              href="https://instagram.com/sema_ftunma"
+              className="hover:underline hover:text-warna-kuning"
+            >
               <FontAwesomeIcon icon={faInstagram} className="mr-2" />
               Instagram
             </a>
-            <a href="https://www.youtube.com/@SEMAFTUNMA" className="hover:underline hover:text-warna-kuning">
+            <a
+              href="https://www.youtube.com/@SEMAFTUNMA"
+              className="hover:underline hover:text-warna-kuning"
+            >
               <FontAwesomeIcon icon={faYoutube} className="mr-2" />
               Youtube
             </a>

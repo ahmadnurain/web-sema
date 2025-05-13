@@ -7,7 +7,7 @@ const StrukturKabinet = () => {
       <div
         className="bg-cover h-auto flex justify-center -mb-28"
         style={{
-          backgroundImage: "url(/Background/background-header.png)",
+          backgroundImage: "url(/Background/background-header.webp)",
         }}
       >
         <div className="bg-gradient-to-t from-white/100 via-white/70 to-white/50 inset-0 flex justify-center items-center h-screen w-full">
@@ -37,7 +37,7 @@ const StrukturKabinet = () => {
                 data-aos-duration="2000"
               >
                 <img
-                  src="Logo/Logo Kabinet Sema FT.png"
+                  src="Logo/Logo Kabinet Sema FT.webp"
                   className="w-44 md:w-44 h-44 md:h-44"
                   alt="Logo BEM UPNVJ"
                 />
@@ -51,7 +51,7 @@ const StrukturKabinet = () => {
         <div
           className="absolute inset-0 bg-cover bg-no-repeat opacity-10"
           style={{
-            backgroundImage: "url('/Background/background-bemu.png')",
+            backgroundImage: "url('/Background/background-bemu.webp')",
           }}
         ></div>
 
@@ -130,42 +130,42 @@ const DepartmentCard = ({ to, logoPath, type, fullName, shortName }) => {
 const departmentData = [
   {
     to: "/Department/BPH",
-    logoPath: "/departments/sekretaris/sekretaris.png",
+    logoPath: "/departments/sekretaris/sekretaris.webp",
     type: "Sekretaris",
     fullName: "Sekretaris Umum",
     shortName: "SEKRETARIS",
   },
   {
     to: "/Department/BPH",
-    logoPath: "/departments/bendahara/bendahara.png",
+    logoPath: "/departments/bendahara/bendahara.webp",
     type: "Bendahara",
     fullName: "Bendahara Umum",
     shortName: "BENDAHARA",
   },
   {
     to: "/department/kominfo",
-    logoPath: "/departments/kominfo/kominfo.png",
+    logoPath: "/departments/kominfo/kominfo.webp",
     type: "Departemen",
     fullName: "Komunikasi & Informasi",
     shortName: "KOMINFO",
   },
   {
     to: "/department/ristek",
-    logoPath: "/departments/ristek/ristek.png",
+    logoPath: "/departments/ristek/ristek.webp",
     type: "Departemen",
     fullName: "Riset & Teknologi",
     shortName: "RISTEK",
   },
   {
     to: "/department/ristek",
-    logoPath: "/departments/advokasi/advokasi.png",
+    logoPath: "/departments/advokasi/advokasi.webp",
     type: "Departemen",
     fullName: "Advokasi",
     shortName: "ADVOKASI",
   },
   {
     to: "/department/ppsdm",
-    logoPath: "/departments/ppsdm/ppsdm.png",
+    logoPath: "/departments/ppsdm/ppsdm.webp",
     type: "Departemen",
     fullName: "Pengembangan Potensi Sumber Daya Mahasiswa",
     shortName: "PPSDM",

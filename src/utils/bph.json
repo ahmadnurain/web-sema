@@ -2,7 +2,7 @@
   "default": [
     {
       "title": "Badan Pengawas Harian",
-      "logo": "/Logo Parlemen BEM UPNVJ.png",
+      "logo": "/Logo Kabinet Sema FT.webp",
       "desk": "Badan Pengawas Harian bertugas untuk mengawasi jalannya roda organisasi , memastikan setiap program kerja dilaksanakan sesuai dengan ketentuan, aturan organisasi, serta menjaga kinerja dan akuntabilitas pengurus agar tetap berjalan secara transparan dan profesional."
     }
   ],
@@ -12,28 +12,28 @@
       "name": "Dwi Rizqy Ramadhan",
       "jabatan": "Ketua",
       "instagram": "sf",
-      "image": "/leaders/kiki.png"
+      "image": "/leaders/kiki.webp"
     },
     {
       "id": 2,
       "name": "Salman Gibrani Alfaris",
       "jabatan": "Wakil Ketua",
       "instagram": "Tes",
-      "image": "/leaders/salman.png"
+      "image": "/leaders/salman.webp"
     },
     {
       "id": 3,
       "name": "Aprianti Safarani Ainunnisa",
       "jabatan": "Sekretaris",
       "instagram": "Tes",
-      "image": "/sekretaris/apri.png"
+      "image": "/sekretaris/apri.webp"
     },
     {
       "id": 4,
       "name": "Ria Fitriani",
       "jabatan": "Bendahara",
       "instagram": "Tes",
-      "image": "/bendahara/ria.png"
+      "image": "/bendahara/ria.webp"
     }
   ]
 }

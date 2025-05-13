@@ -2,8 +2,8 @@
   "default": [
     {
       "title": "Departemen Komunikasi & Informasi",
-      "logo": "/kominfo/kominfo.png",
-      "allanggota": "/kominfo/allkominfo.png",
+      "logo": "/kominfo/kominfo.webp",
+      "allanggota": "/kominfo/allkominfo.webp",
       "desk": "Departemen Komunikasi & Informasi berperan dalam menyusun dan menyebarluaskan informasi strategis, merancang indikator keberhasilan komunikasi dan publikasi, serta memelihara citra organisasi melalui pengelolaan media, konten kreatif, dan hubungan dengan pemangku kepentingan."
     }
   ],
@@ -11,7 +11,7 @@
     {
       "nama": "Shalsabila Dwi Aprilia",
       "instagram": "tes",
-      "image": "/kominfo/caca.png",
+      "image": "/kominfo/caca.webp",
       "title": "Koordinator Departemen Komunikasi & Informasi"
     }
   ],
@@ -20,25 +20,25 @@
       "id": 1,
       "name": "Temi Mei Sri Utami",
       "instagram": "sf",
-      "image": "/kominfo/temi.png"
+      "image": "/kominfo/temi.webp"
     },
     {
       "id": 2,
       "name": "Ahmad Nur`Ain",
       "instagram": "Tes",
-      "image": "/kominfo/ahmad.png"
+      "image": "/kominfo/ahmad.webp"
     },
     {
       "id": 3,
       "name": "Andi Nugraha Saputra",
       "instagram": "Tes",
-      "image": "/kominfo/andi.png"
+      "image": "/kominfo/andi.webp"
     },
     {
       "id": 4,
       "name": "Sandi Pirdaus",
       "instagram": "Tes",
-      "image": "/kominfo/sandi.png"
+      "image": "/kominfo/sandi.webp"
     }
   ],
   "proker": [

@@ -2,8 +2,8 @@
   "default": [
     {
       "title": "Departemen Riset & Teknologi",
-      "logo": "/ristek/ristek.png",
-      "allanggota": "/ristek/allristek.png",
+      "logo": "/ristek/ristek.webp",
+      "allanggota": "/ristek/allristek.webp",
       "desk": "Departemen Riset & Teknologi yang fokus pada pengumpulan, pengolahan, dan pemanfaatan informasi melalui kegiatan penelitian serta pengembangan teknologi untuk mendukung kinerja organisasi dan pengembangan sumber daya mahasiswa. Tujuannya adalah menciptakan solusi berbasis data dan inovasi teknologi dalam menjawab tantangan internal maupun eksternal organisasi."
     }
   ],
@@ -11,7 +11,7 @@
     {
       "nama": "Nakula Sukma Alkindi",
       "instagram": "tes",
-      "image": "/ristek/alkindi.png",
+      "image": "/ristek/alkindi.webp",
       "title": "Koordinator Departemen Riset & Teknologi"
     }
   ],
@@ -20,25 +20,25 @@
       "id": 1,
       "name": "Nindi Lestari",
       "instagram": "sf",
-      "image": "/ristek/nindi.png"
+      "image": "/ristek/nindi.webp"
     },
     {
       "id": 2,
       "name": "Rubby Afkar Gustian",
       "instagram": "Tes",
-      "image": "/ristek/rubby.png"
+      "image": "/ristek/rubby.webp"
     },
     {
       "id": 3,
       "name": "Titah Syauqi",
       "instagram": "Tes",
-      "image": "/ristek/syauqi.png"
+      "image": "/ristek/syauqi.webp"
     },
     {
       "id": 4,
       "name": "Vickry Afrizal Herdiawan",
       "instagram": "Tes",
-      "image": "/ristek/vickry.png"
+      "image": "/ristek/vickry.webp"
     }
   ],
   "proker": [

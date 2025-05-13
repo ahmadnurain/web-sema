@@ -2,8 +2,8 @@
   "default": [
     {
       "title": "Departemen Advokasi",
-      "logo": "/advokasi/advokasi.png",
-      "allanggota": "/advokasi/alladvokasi.png",
+      "logo": "/advokasi/advokasi.webp",
+      "allanggota": "/advokasi/alladvokasi.webp",
       "desk": "Departemen Advokasi bertugas sebagai wadah perwakilan aspirasi dan pembelaan terhadap hak-hak mahasiswa, serta menjadi penghubung antara mahasiswa dengan pihak-pihak terkait seperti pimpinan kampus, birokrasi, atau instansi luar dalam rangka memperjuangkan kepentingan mahasiswa."
     }
   ],
@@ -11,7 +11,7 @@
     {
       "nama": "Fajri Hidayat",
       "instagram": "tes",
-      "image": "/advokasi/fazri.png",
+      "image": "/advokasi/fazri.webp",
       "title": "Koordinator Departemen Advokasi"
     }
   ],
@@ -20,25 +20,25 @@
       "id": 1,
       "name": "Novita Sundari",
       "instagram": "sf",
-      "image": "/advokasi/novita.png"
+      "image": "/advokasi/novita.webp"
     },
     {
       "id": 2,
       "name": "Ardiansyah Hasan",
       "instagram": "Tes",
-      "image": "/advokasi/ardi.png"
+      "image": "/advokasi/ardi.webp"
     },
     {
       "id": 3,
       "name": "Ahmad Beni Sulaeman",
       "instagram": "Tes",
-      "image": "/advokasi/beni.png"
+      "image": "/advokasi/beni.webp"
     },
     {
       "id": 4,
       "name": "Muhamad Khairudin M.",
       "instagram": "Tes",
-      "image": "/advokasi/heru.png"
+      "image": "/advokasi/heru.webp"
     }
   ],
   "proker": [
