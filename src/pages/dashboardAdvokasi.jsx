@@ -92,7 +92,7 @@ const DashboardAdvokasi = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-24 p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-8 lg:mt-12">
           <h1 className="text-2xl md:text-3xl font-bold text-red-800">
             Dashboard Advokasi
           </h1>

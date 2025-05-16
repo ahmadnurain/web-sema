@@ -102,7 +102,7 @@ const FormInput = ({
             file:text-sm file:font-semibold
             file:bg-yellow-500 file:text-white
             hover:file:bg-yellow-600"
-          accept="image/*,.pdf,.doc,.docx"
+          accept="image/*,.pdf,.doc,.jpg,.png,.jpeg,.docx"
         />
         {files.length > 0 && <p className="mt-2 text-sm text-gray-300">File terpilih: {files.length}</p>}
       </div>

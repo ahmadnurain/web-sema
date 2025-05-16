@@ -186,6 +186,7 @@ const FormInputWithLogic = () => {
     // Validasi ekstensi file
     const allowedExtensions = [
       ".webp",
+      ".jpg",
       ".jpeg",
       ".webp",
       ".pdf",
