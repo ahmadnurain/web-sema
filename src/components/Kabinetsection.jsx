@@ -26,18 +26,15 @@ const KabinetSection = () => {
           data-aos="fade-down"
           data-aos-duration="2000"
         >
-          <span className="font-bold">Satya Naraya </span>Lorem ipsum dolor, sit
-          amet consectetur adipisicing elit. Praesentium eum incidunt, minima
-          alias ipsam blanditiis cum cumque, possimus dolore optio quod repellat
-          explicabo dolorem esse. Laudantium, iure fugiat. Quos, dolorum! <br />
+          <span className="font-bold">Satya Naraya </span>menggambarkan semangat
+          kepemimpinan yang dilandasi oleh kejujuran, komitmen untuk menjaga
+          amanah, serta tekad untuk mengayomi dan melayani masyarakat dengan
+          penuh dedikasi.
           <br />
-          Makna dari <span className="font-bold">Satya Naraya </span>Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Iusto hic et, aspernatur
-          soluta iste asperiores nemo quasi repellendus non nesciunt maiores?
-          Omnis ab, distinctio illum nam tenetur quos voluptatibus ipsa
-          dignissimos est cum doloribus aliquid enim tempora, a ipsam ducimus.
-          At, laborum quia id dolor nam illum harum cumque facere placeat saepe
-          earum debitis, culpa ut velit dicta! Nam, necessitatibus.
+          <br />
+          Kabinet <span className="font-bold">Satya Naraya </span>ini hadir sebagai wujud nyata dari generasi yang menjunjung tinggi integritas, tanggung jawab, serta semangat gotong royong demi terciptanya perubahan yang berkelanjutan. Dengan semangat Satya Naraya, setiap langkah diambil untuk kebaikan bersama, dengan menjadikan nilai-nilai luhur sebagai pedoman utama dalam pengabdian.
+
+
         </p>
       </div>
     </>

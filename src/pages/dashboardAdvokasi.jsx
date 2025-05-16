@@ -14,6 +14,8 @@ const DashboardAdvokasi = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
 
+    document.title = "Dashboard Aspirasi - SEMA FT";
+
     // Cek authentication
     const isAuthenticated = localStorage.getItem("isAuthenticated");
     if (!isAuthenticated) {

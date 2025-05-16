@@ -44,20 +44,20 @@
   "proker": [
     {
       "id": 1,
-      "title": "Lorem",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi exercitationem itaque dolorum dolore repellat natus at tenetur neque corporis vel!",
+      "title": "Coming",
+      "description": "Soon",
       "image": "/Proker/comingsoon.png"
     },
     {
       "id": 2,
-      "title": "Lorem",
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius eligendi quisquam ipsa quos alias doloremque, ex quis reprehenderit quasi.",
+      "title": "Coming",
+      "description": "Soon",
       "image": "/Proker/comingsoon.png"
     },
     {
       "id": 3,
-      "title": "Lorem",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aspernatur, voluptatem quod quibusdam animi quia quam mollitia veritatis! Aspernatur, corporis.",
+      "title": "Coming",
+      "description": "Soon",
       "image": "/Proker/comingsoon.png"
     }
   ]

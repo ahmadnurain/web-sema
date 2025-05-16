@@ -1,21 +1,22 @@
 import { useParams } from "react-router-dom";
 import departmentData from "../../utils/departmentData";
-import { Link } from "react-router-dom"; // Tambahkan ini di bagian atas file
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const DepartmentPage = () => {
   const { departmentId } = useParams();
 
-  // Debug: Lihat parameter yang diterima
+  // Debug
   console.log("Department ID:", departmentId);
   console.log("Available data:", Object.keys(departmentData));
 
-  // Cek apakah departemen ada
   const departmentExists = Object.prototype.hasOwnProperty.call(
     departmentData,
     departmentId
   );
 
   if (!departmentExists) {
+    document.title = `Departemen ${departmentId} tidak ditemukan - SEMA FT`;
     return (
       <div className="text-center py-20">
         <h2 className="text-2xl font-bold text-red-600">
@@ -31,6 +32,26 @@ const DepartmentPage = () => {
   const data = departmentData[departmentId];
   const Default = data.default[0];
   const Koordinator = data.koordinator[0];
+
+  // 🎯 Set judul halaman secara dinamis
+  useEffect(() => {
+    document.title = `${Default.title || "Detail Departemen"} - SEMA FT`;
+
+    if (Default.logo) {
+      // Gabungkan path sesuai struktur folder kamu
+      const faviconUrl = `/departments${Default.logo}`; // Contoh hasil: /departments/kominfo/logo.png
+  
+      let favicon = document.querySelector("link[rel='icon']");
+  
+      if (!favicon) {
+        favicon = document.createElement("link");
+        favicon.rel = "icon";
+        document.head.appendChild(favicon);
+      }
+  
+      favicon.href = faviconUrl;
+    }
+  }, [Default.title, Default.logo, departmentId]);
 
   return (
     <div>

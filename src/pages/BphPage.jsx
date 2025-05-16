@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import data from "../utils/bph.json";
+import { useEffect } from "react";
 
 const Bph = () => {
+  useEffect(() => {
+    document.title = "BPH - SEMA FT";
+  }, []);
   const Default = data.default[0]; // Mengambil objek pertama dari array default
 
   return (

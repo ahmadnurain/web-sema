@@ -17,35 +17,35 @@
       "kabinet": "Kabinet Satya Naraya",
       "makna1": "apa ya?",
       "makna2": "apa?",
-      "visi": "Visi foya Misi FOya ",
+      "visi": "Mewujudkan Senat Mahasiswa Fakultas Teknik Universitas Majalengka sebagai lembaga eksekutif yang berintegritas, adaptif, dan berdedikasi dalam melayani serta memberdayakan mahasiswa dengan semangat pengabdian dan nilai-nilai Satya Naraya.",
       "visiImage": "Section/home_visi.webp"
     }
   ],
   "misi": [
     {
       "id": 1,
-      "title": "Lorem, ipsum dolor.",
-      "subtitle": "Lorem, ipsum dolor."
+      "title": "Menghadirkan pelayanan organisasi yang responsif dan solutif",
+      "subtitle": "terhadap kebutuhan dan aspirasi mahasiswa Fakultas Teknik."
     },
     {
       "id": 2,
-      "title": "Lorem, ipsum dolor.",
-      "subtitle": "Lorem, ipsum dolor."
+      "title": "Menjalankan program kerja yang inovatif, edukatif, dan berkelanjutan",
+      "subtitle": "untuk mendukung pengembangan potensi mahasiswa di bidang akademik maupun non-akademik."
     },
     {
       "id": 3,
-      "title": "Lorem, ipsum dolor.",
-      "subtitle": "Lorem, ipsum dolor."
+      "title": "Membangun hubungan yang harmonis dan kolaboratif",
+      "subtitle": "antarorganisasi kemahasiswaan serta dengan pihak fakultas maupun mitra eksternal."
     },
     {
       "id": 4,
-      "title": "Lorem, ipsum dolor.",
-      "subtitle": "Lorem, ipsum dolor."
+      "title": "Menumbuhkan semangat kepemimpinan dan pengabdian sosial",
+      "subtitle": "di kalangan mahasiswa melalui kegiatan yang berdampak nyata bagi lingkungan kampus dan masyarakat."
     },
     {
       "id": 5,
-      "title": "Lorem, ipsum dolor.",
-      "subtitle": "Lorem, ipsum dolor."
+      "title": "Menanamkan nilai Satya Naraya",
+      "subtitle": "dalam setiap aktivitas kabinet, yakni kejujuran, kesetiaan, dan keberpihakan terhadap kebaikan bersama."
     }
   ]
 }

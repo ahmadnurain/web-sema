@@ -36,16 +36,13 @@ const Footer = () => {
         {/* Text Section */}
         <nav className="flex w-full lg:w-3/5 h-full justify-center items-center text-center lg:text-left">
           <p className="text-justify pr-0 lg:pr-10 py-10 lg:py-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ullam
-            aut, hic, consequatur eveniet numquam pariatur at tempore illo
-            veniam libero similique in exercitationem esse culpa enim modi
-            adipisci maiores dolor! Asperiores temporibus natus aspernatur
-            ipsum. Facere aperiam hic voluptatibus fuga alias consectetur
-            nostrum, voluptas sapiente ut, possimus pariatur ullam. Doloribus,
-            expedita laborum asperiores officia corporis perferendis sed?
-            Officia asperiores rem totam corporis fugit, accusamus iusto rerum
-            quia aliquam quasi libero dolor aspernatur tenetur soluta odit cum,
-            exercitationem molestiae. Consectetur?
+            Seiring dengan kemajuan pesat dalam teknologi informasi, website
+            menjadi elemen yang sangat krusial bagi suatu organisasi. Selain
+            berfungsi sebagai media untuk menyampaikan informasi, website juga
+            berperan sebagai alat komunikasi dengan masyarakat luas,
+            meningkatkan visibilitas, serta memperkuat citra organisasi. Oleh
+            karena itu, Senat Mahasiswa Fakultas Teknik UNMA berencana untuk membuat dan
+            mengembangkan website resmi yang komprehensif dan interaktif.
           </p>
         </nav>
 

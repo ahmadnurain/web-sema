@@ -7,6 +7,7 @@ import FormInput from "../components/FormInput";
 const FormAspirasi = () => {
   useEffect(() => {
     AOS.init();
+    document.title = "Form Aspirasi - SEMA FT";
   }, []);
 
   return (

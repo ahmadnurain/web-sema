@@ -1,12 +1,53 @@
-// ProgramKerjaDepartemen.jsx
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
 import departmentData from "../../utils/departmentData";
 
 const ProgramKerjaDepartemen = () => {
   const { departmentId } = useParams();
+
+  // Debug
+  console.log("Department ID:", departmentId);
+  console.log("Available data:", Object.keys(departmentData));
+
+  const departmentExists = Object.prototype.hasOwnProperty.call(
+    departmentData,
+    departmentId
+  );
+
+  if (!departmentExists) {
+    document.title = `Departemen ${departmentId} tidak ditemukan - SEMA FT`;
+    return (
+      <div className="text-center py-20">
+        <h2 className="text-2xl font-bold text-red-600">
+          Departemen {departmentId} tidak ditemukan
+        </h2>
+        <p>
+          Departemen yang tersedia: {Object.keys(departmentData).join(", ")}
+        </p>
+      </div>
+    );
+  }
+
   const data = departmentData[departmentId];
   const Default = data.default[0];
+
+  // Update title dan favicon
+  useEffect(() => {
+    document.title = `Program Kerja - ${Default.title} - SEMA FT`;
+
+    if (Default.logo) {
+      const faviconUrl = `/departments${Default.logo}`;
+
+      let favicon = document.querySelector("link[rel='icon']");
+      if (!favicon) {
+        favicon = document.createElement("link");
+        favicon.rel = "icon";
+        document.head.appendChild(favicon);
+      }
+
+      favicon.href = faviconUrl;
+    }
+  }, [Default.title, Default.logo, departmentId]);
 
   return (
     <div className="pb-0 mb-10">

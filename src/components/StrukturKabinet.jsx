@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const StrukturKabinet = () => {
+  useEffect(() => {
+    document.title = "Struktur Kabinet - SEMA FT";
+  }, []);
   return (
     <div>
       <div

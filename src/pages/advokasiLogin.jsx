@@ -12,6 +12,7 @@ const AdvokasiLogin = () => {
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    document.title = "Advokasi Login - SEMA FT";
   }, []);
 
   const handleLogin = async (e) => {
